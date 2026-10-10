@@ -1,6 +1,6 @@
 # Our Bonaire Trip
 
-Trip home base for Beans + wife: https://bobclawsome-debug.github.io/bonaire/
+Trip home base: https://bobclawsome-debug.github.io/bonaire/
 
 Everything is data-driven. Edit the JSON and push:
 
