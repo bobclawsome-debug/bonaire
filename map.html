@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Bonaire Map · Our Bonaire Trip</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+#map{position:absolute;top:0;bottom:0;left:0;right:0}
+.embed .title{display:none}.title{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(255,255,255,.95);padding:6px 14px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);font-weight:700;font-size:16px;white-space:nowrap}
+.legend{background:rgba(255,255,255,.95);padding:8px 10px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);font-size:13px;line-height:1.6}
+.legend label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.dot{display:inline-block;width:13px;height:13px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.4)}
+.pin{width:18px;height:18px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.4)}
+.pin.sq{border-radius:4px}
+.leaflet-popup-content{font-size:14px;line-height:1.4;margin:10px 14px}
+.pp h3{margin:0 0 4px;font-size:16px}.pp .tag{display:inline-block;color:#fff;border-radius:4px;padding:1px 6px;font-size:12px;margin-bottom:6px}
+.pp table{border-collapse:collapse;margin:4px 0}.pp td{padding:1px 6px 1px 0;vertical-align:top}.pp td:first-child{color:#666}
+.pp a.btn{display:inline-block;margin-top:6px;margin-right:6px;background:#1a73e8;color:#fff;padding:5px 10px;border-radius:5px;text-decoration:none;font-weight:600}
+.pp .src{color:#888;font-size:11px;margin-top:6px}
+.lbl{display:none}.showdive .lbl{display:block}.showdive .lblsvc,.showdive .lblfood{display:none}.showsvc .lblsvc{display:block}.showfood .lblfood{display:block}.lbl.lblhotel{display:block!important;font-size:13px;color:#b71c1c;font-size:14px}
+.pin.food{display:flex;align-items:center;justify-content:center;font-size:11px;line-height:1}
+.star{filter:drop-shadow(0 0 1.5px #fff) drop-shadow(0 2px 3px rgba(0,0,0,.7))}
+.lbl{background:transparent;border:0;box-shadow:none;font-weight:600;font-size:11px;color:#111;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff}
+.rt{background:#fafafa;border:1px solid #eee;border-radius:6px;padding:6px 8px;margin:4px 0 6px}
+.rt .big{font-size:18px;color:#f5a623;letter-spacing:1px}.rt .num{font-size:18px;font-weight:700;color:#222;margin-left:4px}.rt .tot{color:#666;font-size:12px;margin-left:4px}
+.rt .srcl{font-size:12px;color:#444;margin-top:2px}.rt .srcl a{color:#1a73e8}
+.vb{display:inline-block;color:#fff;border-radius:10px;padding:1px 8px;font-size:12px;font-weight:700;margin:4px 4px 2px 0}
+.rt .sum{font-size:13px;margin-top:4px}.rt .flag{font-size:12px;color:#8a4b00;background:#fff3e0;border-radius:4px;padding:3px 5px;margin-top:4px}
+.rt .fd{font-size:11px;color:#999;margin-top:3px}
+.fpanel{background:rgba(255,255,255,.97);border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);font-size:13px;max-width:290px}
+.fpanel .fbtns{display:flex;gap:6px;padding:6px}
+.fpanel button{border:0;border-radius:6px;padding:6px 9px;font-weight:700;font-size:13px;cursor:pointer;background:#eee}
+.fpanel button.on{background:#1a73e8;color:#fff}
+.fbody{padding:4px 10px 8px;max-height:55vh;overflow:auto;display:none}
+.fbody.open{display:block}
+.mins button{padding:3px 7px;font-size:12px;margin:2px 2px 2px 0;background:#eee}.mins button.on{background:#f5a623;color:#111}
+.fbody label{display:flex;align-items:center;gap:5px;margin:2px 0;cursor:pointer}
+.cnt{font-weight:700;margin:6px 0 2px;color:#333}
+.bl{list-style:none;margin:0;padding:0}.bl li{padding:5px 2px;border-bottom:1px solid #eee;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.bl li:hover{background:#f1f6ff}.bl .rk{color:#888;min-width:18px}.bl .nm{flex:1}.bl .sc{font-weight:700;white-space:nowrap}
+.bl .tier{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:3px}
+@media (max-width:600px){.title{font-size:14px;top:8px}.legend{font-size:12px}.fpanel{max-width:240px;font-size:12px}.fbody{max-height:45vh}.popopen .fpanel{display:none}}
+</style></head><body>
+<div class="title">🤿 Bonaire Dive Map</div>
+<div id="map"></div>
+<script>
+const CATS={"hotel": ["Our hotel", "#d50000"], "shore": ["Shore dive", "#1e88e5"], "advanced": ["Advanced", "#212121"], "boat": ["Boat only (Klein Bonaire)", "#8e24aa"], "restricted": ["Restricted (permit/guided)", "#fb8c00"], "services": ["Shops, stay, airport, hospital", "#2e7d32"], "food_cheap": ["Food: cheap/local", "#00897b"], "food_mid": ["Food: mid-range", "#f9a825"], "food_splurge": ["Food: splurge", "#5d4037"], "groceries": ["Groceries", "#7cb342"]};
+if(window.self!==window.top)document.documentElement.classList.add('embed');
+fetch('data/sites.json',{cache:'no-cache'}).then(r=>r.json()).then(SITES=>{
+const map=L.map('map',{zoomControl:true}).setView([12.165,-68.30],11);
+const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'});
+const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
+osm.addTo(map);
+const groups={};Object.keys(CATS).forEach(k=>groups[k]=L.layerGroup().addTo(map));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const all=[];
+const VC={'Must try':'#2e7d32','Good':'#1565c0','OK':'#757575','Skip':'#e65100'};
+function stars(x){const r=Math.round(x*2)/2,f=Math.floor(r);return '★'.repeat(f)+(r-f?'½':'')+'<span style="color:#ddd">'+'★'.repeat(5-f-(r-f?1:0))+'</span>'}
+function rblock(r){let h=`<div class="rt"><span class="big">${stars(r.score)}</span><span class="num">${r.score.toFixed(1)}</span><span class="tot">${r.total.toLocaleString()} reviews</span>`;
+ h+=r.sources.map(x=>`<div class="srcl">${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()})${x.rank?' · '+esc(x.rank):''} · <a href="${x.url}" target="_blank" rel="noopener">listing</a></div>`).join('');
+ if(r.verdict)h+=`<span class="vb" style="background:${VC[r.verdict]}">${r.verdict}</span><span style="font-size:12px;color:#444">${esc(r.why)}</span>`;
+ if(r.summary)h+=`<div class="sum">${esc(r.summary)}</div>`;
+ if(r.flag)h+=`<div class="flag">⚠ ${esc(r.flag)}</div>`;
+ return h+`<div class="fd">Combined = review-weighted average. Ratings fetched ${esc(r.fetched)}.</div></div>`}
+const FOODCATS=['food_cheap','food_mid','food_splurge'];const foodM=[];
+
+SITES.forEach(s=>{
+ const [label,color]=CATS[s.cat];
+ const food=s.cat.startsWith('food')||s.cat==='groceries';
+ const icon=s.cat==='hotel'?L.divIcon({className:'',html:`<svg class="star" width="48" height="48" viewBox="0 0 24 24"><path d="M12 2.2L1.6 11.4h3v9.8h5.4v-6.2h4v6.2h5.4v-9.8h3z" fill="${color}" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>`,iconSize:[48,48],iconAnchor:[24,26],popupAnchor:[0,-20]})
+  :L.divIcon({className:'',html:food?`<div class="pin food" style="background:${color}">${s.cat==='groceries'?'🛒':'🍴'}</div>`:`<div class="pin${s.cat==='services'?' sq':''}" style="background:${color}"></div>`,iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-10]});
+ const dir=`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lon}`;
+ let rows='';
+ if(s.addr)rows+=`<tr><td>Address</td><td>${esc(s.addr)}</td></tr>`;
+ if(s.skill)rows+=`<tr><td>Skill</td><td>${esc(s.skill)}</td></tr>`;
+ if(s.depth)rows+=`<tr><td>Depth</td><td>${esc(s.depth)}</td></tr>`;
+ const html=`<div class="pp"><h3>${esc(s.name)}</h3><span class="tag" style="background:${color}">${esc(label)}</span>${s.ratings?rblock(s.ratings):(food?'<div class="rt">No ratings found</div>':'')}
+ ${rows?`<table>${rows}</table>`:''}<div>${esc(s.note)}</div>
+ <a class="btn" href="${dir}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="btn" style="background:#555" href="${s.url}" target="_blank" rel="noopener">Website</a>`:''}
+ <div class="src">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)} · Source: ${esc(s.src)}</div></div>`;
+ const m=L.marker([s.lat,s.lon],{icon,title:s.name,zIndexOffset:s.cat==='hotel'?10000:0}).bindPopup(html,{maxWidth:300,maxHeight:Math.max(260,window.innerHeight-180),autoPanPaddingTopLeft:L.point(20,120),autoPanPaddingBottomRight:L.point(20,20)});
+ m.bindTooltip(s.name.replace(/ \(Klein Bonaire\)/,''),{permanent:true,direction:'right',offset:[s.cat==='hotel'?22:10,0],className:s.cat==='hotel'?'lbl lblhotel':s.cat==='services'?'lbl lblsvc':food?'lbl lblfood':'lbl'});
+ m.addTo(groups[s.cat]);all.push(m);if(FOODCATS.includes(s.cat))foodM.push({m,s});
+});
+L.control.layers({'Street map':osm,'Satellite':sat},null,{position:'topright',collapsed:false}).addTo(map);
+const lg=L.control({position:'bottomleft'});
+lg.onAdd=()=>{const d=L.DomUtil.create('div','legend');
+ const rows=Object.entries(CATS).map(([k,[l,c]])=>`<label><input type="checkbox" checked data-k="${k}">${k==='hotel'?'<svg width="18" height="18" viewBox="0 0 24 24" style="filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))"><path d="M12 2.2L1.6 11.4h3v9.8h5.4v-6.2h4v6.2h5.4v-9.8h3z" fill="'+c+'" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>':`<span class="dot" style="background:${c}${k==='services'?';border-radius:3px':''}"></span>`}${l}</label>`).join('');
+ d.innerHTML='<b class="lh" style="cursor:pointer">Legend <span class="car">▾</span></b> <small>(tap to show/hide)</small><div class="lb">'+rows+'<small>Tap a pin for details + directions.</small></div>';
+ L.DomEvent.disableClickPropagation(d);L.DomEvent.disableScrollPropagation(d);
+ const lb=d.querySelector('.lb'),car=d.querySelector('.car');
+ const set=o=>{lb.style.display=o?'':'none';car.textContent=o?'▾':'▸'};
+ set(window.innerWidth>600);
+ d.querySelector('.lh').onclick=()=>set(lb.style.display==='none');
+ d.querySelectorAll('input').forEach(i=>i.onchange=e=>{const g=groups[e.target.dataset.k];e.target.checked?g.addTo(map):map.removeLayer(g);applyFilters()});return d};
+lg.addTo(map);
+// ---- Food filters + Best food list ----
+const F={min:0,unrated:true,v:{'Must try':true,'Good':true,'OK':true,'Skip':true}};
+const tierOn=c=>map.hasLayer(groups[c]);
+function passes(s){const r=s.ratings;if(!r||!r.verdict)return F.unrated;return r.score>=F.min&&F.v[r.verdict]}
+const fc=L.control({position:'topright'});let fdiv;
+fc.onAdd=()=>{fdiv=L.DomUtil.create('div','fpanel');
+ fdiv.innerHTML=`<div class="fbtns"><button data-p="best">🏆 Best food</button><button data-p="filt">⚙ Food filters</button></div>
+ <div class="fbody" data-b="filt"><div><b>Minimum rating</b></div><div class="mins">${[['Any',0],['3+',3],['3.5+',3.5],['4+',4],['4.5+',4.5]].map(([l,v])=>`<button data-min="${v}" class="${v===0?'on':''}">${l}</button>`).join('')}</div>
+ <label><input type="checkbox" id="unr" checked>Include unrated</label>
+ <div style="margin-top:4px"><b>Verdict</b></div>${Object.keys(F.v).map(v=>`<label><input type="checkbox" data-v="${v}" checked><span class="vb" style="background:${VC[v]};margin:0">${v}</span></label>`).join('')}
+ <div style="margin-top:4px;color:#666">Budget tier: use the Food checkboxes in the legend.</div><div class="cnt"></div></div>
+ <div class="fbody" data-b="best"><div class="cnt"></div><ol class="bl"></ol><div style="color:#888;font-size:11px">Ranked by combined score, then review count. Tap a place to zoom to it.</div></div>`;
+ L.DomEvent.disableClickPropagation(fdiv);L.DomEvent.disableScrollPropagation(fdiv);
+ fdiv.querySelectorAll('.fbtns button').forEach(b=>b.onclick=()=>{const body=fdiv.querySelector(`[data-b="${b.dataset.p}"]`),open=!body.classList.contains('open');
+  fdiv.querySelectorAll('.fbody').forEach(x=>x.classList.remove('open'));fdiv.querySelectorAll('.fbtns button').forEach(x=>x.classList.remove('on'));
+  if(open){body.classList.add('open');b.classList.add('on')}});
+ fdiv.querySelectorAll('.mins button').forEach(b=>b.onclick=()=>{F.min=+b.dataset.min;fdiv.querySelectorAll('.mins button').forEach(x=>x.classList.toggle('on',x===b));applyFilters()});
+ fdiv.querySelector('#unr').onchange=e=>{F.unrated=e.target.checked;applyFilters()};
+ fdiv.querySelectorAll('[data-v]').forEach(i=>i.onchange=e=>{F.v[e.target.dataset.v]=e.target.checked;applyFilters()});
+ return fdiv};
+fc.addTo(map);
+function applyFilters(){let shown=[];
+ foodM.forEach(o=>{const ok=passes(o.s),g=groups[o.s.cat];if(ok){if(!g.hasLayer(o.m))g.addLayer(o.m)}else if(g.hasLayer(o.m))g.removeLayer(o.m);if(ok&&tierOn(o.s.cat))shown.push(o)});
+ const txt=`Showing ${shown.length} of ${foodM.length} food places`;fdiv.querySelectorAll('.cnt').forEach(c=>c.textContent=txt);
+ shown.sort((a,b)=>{const ra=a.s.ratings,rb=b.s.ratings;return ((rb&&rb.score)||0)-((ra&&ra.score)||0)||((rb&&rb.total)||0)-((ra&&ra.total)||0)});
+ const ol=fdiv.querySelector('.bl');ol.innerHTML=shown.map((o,i)=>{const r=o.s.ratings;return `<li data-i="${foodM.indexOf(o)}"><span class="rk">${i+1}.</span><span class="nm"><span class="tier" style="background:${CATS[o.s.cat][1]}"></span>${esc(o.s.name)}<br>${r&&r.verdict?`<span class="vb" style="background:${VC[r.verdict]};font-size:11px;margin:1px 0">${r.verdict}</span> <span style="color:#666;font-size:11px">${esc(r.why)}</span>`:'<span style="color:#888">No ratings found</span>'}</span><span class="sc">${r?'★ '+r.score.toFixed(1):'–'}<br><span style="color:#888;font-weight:400;font-size:11px">${r?r.total.toLocaleString():''}</span></span></li>`}).join('')||'<li>No places match these filters.</li>';
+ ol.querySelectorAll('li[data-i]').forEach(li=>li.onclick=()=>{const o=foodM[+li.dataset.i];map.setView([o.s.lat,o.s.lon],16);setTimeout(()=>{o.m.openPopup();const el=o.m.getPopup().getElement();if(el){const t=el.getBoundingClientRect().top;if(t<130)map.panBy([0,t-130],{animate:false})}},300);if(window.innerWidth<=600){fdiv.querySelectorAll('.fbody').forEach(x=>x.classList.remove('open'));fdiv.querySelectorAll('.fbtns button').forEach(x=>x.classList.remove('on'))}});
+}
+applyFilters();
+map.on('popupopen',()=>map.getContainer().classList.add('popopen'));map.on('popupclose',()=>map.getContainer().classList.remove('popopen'));
+
+map.fitBounds(L.featureGroup(all).getBounds().pad(0.08));
+// hide labels when zoomed out to reduce clutter
+function lbls(){const z=map.getZoom(),c=map.getContainer().classList;c.toggle('showdive',z>=11);c.toggle('showsvc',z>=14);c.toggle('showfood',z>=15)}
+lbls();map.on('zoomend',lbls);
+window.map=map;
+window.focusSite=name=>{const m=all.find(x=>x.options.title===name);if(!m)return;const s=SITES.find(x=>x.name===name);const g=groups[s.cat];if(!map.hasLayer(g))g.addTo(map);if(!g.hasLayer(m))g.addLayer(m);map.setView(m.getLatLng(),16,{animate:false});setTimeout(()=>{m.openPopup();const el=m.getPopup().getElement();if(el){const t=el.getBoundingClientRect().top;if(t<130)map.panBy([0,t-130],{animate:false})}},200)};
+if(window.__pending){window.focusSite(window.__pending);window.__pending=null}
+window.dispatchEvent(new Event('mapready'));
+});
+</script></body></html>

@@ -1,0 +1,91 @@
+{
+ "title": "Our Bonaire Trip",
+ "subtitle": "Diving, food & fun on Bonaire",
+ "updated": "Oct 9, 2026",
+ "hotel": {
+  "name": "Bruce Bowker's Carib Inn",
+  "addr": "J.A. Abraham Blvd 46, Kralendijk",
+  "lat": 12.14227,
+  "lon": -68.27549,
+  "url": "https://caribinn.com/",
+  "points": [
+   "Small waterfront dive inn, Google 4.9 (100 reviews, via bonaire.com)",
+   "On-site PADI 5-Star dive center",
+   "Daily boat trips 8:30 AM and 1:30 PM (north/south sites + Klein Bonaire)",
+   "Guest-only rentals: compact truck $490/week, compact car $294/week (1-week minimum)",
+   "House reef / shore entry not confirmed on the official site, so ask at check-in"
+  ],
+  "src": [
+   "https://caribinn.com/hotel/diving/",
+   "https://caribinn.com/rental-vehicles/"
+  ]
+ },
+ "tbd": [
+  {
+   "k": "Trip dates",
+   "v": "TBD"
+  },
+  {
+   "k": "Flights",
+   "v": "TBD"
+  },
+  {
+   "k": "Rental truck",
+   "v": "TBD"
+  },
+  {
+   "k": "Confirmation numbers",
+   "v": "TBD (kept off this public site)"
+  }
+ ],
+ "checklist": [
+  {
+   "id": "passport",
+   "t": "Passports valid at least 6 months past travel",
+   "note": "Check both passports now."
+  },
+  {
+   "id": "tax",
+   "t": "Visitor Entry Tax: $75 per person (age 13+)",
+   "note": "Pay at the official site about 7 days before. Card only. Avoid reseller sites.",
+   "url": "https://tourismtax.bonairegov.com"
+  },
+  {
+   "id": "nature",
+   "t": "STINAPA Nature Fee: $40 per person, per calendar year",
+   "note": "Required for any water contact (dive, snorkel, swim), plus Washington Slagbaai park entry. Valid Jan 1–Dec 31 of the purchase year.",
+   "url": "https://stinapa.bonairenaturefee.org/purchase-nature"
+  },
+  {
+   "id": "ins",
+   "t": "Trip insurance with weather/hurricane cover",
+   "note": "Atlantic hurricane season runs Jun 1–Nov 30. Bonaire is south of the main belt, but cover is still worth it."
+  },
+  {
+   "id": "dan",
+   "t": "DAN dive insurance",
+   "note": "Covers chamber treatment and evacuation.",
+   "url": "https://dan.org/"
+  },
+  {
+   "id": "truck",
+   "t": "Book the rental pickup, with a tank rack",
+   "note": "Pickup + tanks is how Bonaire shore diving works. See Info → Getting around."
+  },
+  {
+   "id": "ev",
+   "t": "Type 2 → NACS adapter: only if bringing an EV (we're not)",
+   "note": "Not needed for this trip."
+  },
+  {
+   "id": "sun",
+   "t": "Reef-safe (mineral) sunscreen + rash guards",
+   "note": "Mineral zinc/titanium only in the marine park. No oxybenzone/octinoxate."
+  },
+  {
+   "id": "orient",
+   "t": "Book the mandatory orientation dive for day 1",
+   "note": "Required for everyone new to Bonaire before independent shore diving."
+  }
+ ]
+}

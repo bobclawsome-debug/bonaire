@@ -1,0 +1,349 @@
+{
+ "deals": [
+  {
+   "name": "Smiling Buddha: Thai Yoga Massage",
+   "price": "$90 single · $150 for 2 sessions (a duo for two of us)",
+   "url": "https://www.smilingbuddhayoga.org/thai-yoga-massage",
+   "note": "Book via WhatsApp on their site. Studio payments are cash (or PayPal online). The 'by Dec 15' deadline from earlier research isn't shown on the official page now, so confirm when booking.",
+   "cat": null,
+   "g": {
+    "rating": 5.0,
+    "count": 14,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Delfins Wellness Day Pass",
+   "price": "$120 per adult",
+   "url": "https://www.delfinsbeachresort.com/daypasses",
+   "note": "Beach + pools, a beach bed, towel (deposit), water and a 50-min Beach Spa massage. Reservation required.",
+   "cat": null
+  },
+  {
+   "name": "Carib Inn dive packages (our hotel)",
+   "price": "$125 6-day unlimited shore · $25/boat dive · $275 for 6 boat dives · $425 for 12",
+   "url": "https://caribinn.com/diving-packages/",
+   "note": "Cheapest unlimited shore air we found, and it's on-site.",
+   "cat": null,
+   "g": {
+    "rating": 4.9,
+    "count": 100,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Klein Bonaire water taxi (Epic)",
+   "price": "$25 round trip · snorkel gear $5 · chair $5 · lunch box + chairs +$17.50",
+   "url": "https://www.watertaxikleinbonaire.com/",
+   "note": "From Nautico Marina (30 min) or Buddy Dive (15 min). Free drift-snorkel drop-off on the 10:00/10:15 departures. Caribe Watersport also charges $25.",
+   "cat": null,
+   "g": {
+    "rating": 4.8,
+    "count": 313,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Mangrove Center kayak + snorkel (2 h)",
+   "price": "$60 per person",
+   "url": "https://www.mangrovecenter.com/book-now",
+   "note": "1-hour tour $40–45 and night kayak $75–80 (the official pages disagree). Bring your Nature Fee proof; a third-party listing says cash only.",
+   "cat": null,
+   "g": {
+    "rating": 4.8,
+    "count": 720,
+    "src": "Google via bonaire.com"
+   }
+  }
+ ],
+ "spas": [
+  {
+   "name": "Massage Bonaire",
+   "price": "60 min: $90 relaxation · $100 deep tissue/sports · $115 hot stone etc.",
+   "url": "https://massage-bonaire.com/pricelist/",
+   "note": null,
+   "cat": null,
+   "g": {
+    "rating": 5.0,
+    "count": 53,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Maka's Spa (Rincon)",
+   "price": "Prices on request",
+   "url": "https://bonaire.com/en/spa-massage/maka-s-spa-bonaire/",
+   "note": "Mon–Sat 9–5 per bonaire.com.",
+   "cat": null,
+   "g": {
+    "rating": 4.9,
+    "count": 121,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Namaste Relaxation Studio",
+   "price": "Prices on site",
+   "url": "https://namasterelaxationstudio.com/",
+   "note": "Massage, reflexology, aromatherapy.",
+   "cat": null,
+   "g": {
+    "rating": 4.9,
+    "count": 36,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Johana Massage on Bonaire",
+   "price": "Prices on site",
+   "url": "https://johanamassageonbonaire.com/",
+   "note": "Swedish, deep tissue, couples and mobile massage.",
+   "cat": null,
+   "g": {
+    "rating": 5.0,
+    "count": 125,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Bamboo Day Spa (Bamboo Bonaire)",
+   "price": "60 min $95 · 90 min $145 (Swedish, deep tissue, Lomi Lomi, hammam)",
+   "url": "https://www.bamboobonaire.com/massage-spa",
+   "note": null,
+   "cat": null
+  },
+  {
+   "name": "Harbour Village spa",
+   "price": "Prices on request",
+   "url": "https://www.harbourvillage.com/wellness",
+   "note": "Six treatment rooms incl. couples suites.",
+   "cat": null
+  },
+  {
+   "name": "Captain Don's Habitat spa (Graceful Touch)",
+   "price": "Prices on request",
+   "url": "https://www.habitatbonaire.com/services",
+   "note": "Couples massage, seaside cabana. (Rating shown is the resort's.)",
+   "cat": null,
+   "g": {
+    "rating": 4.4,
+    "count": 484,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Plaza Resort: Senti Spa",
+   "price": "Not open yet",
+   "url": "https://www.plazaresortbonaire.com/en/blog/resort-update",
+   "note": "Opens during 2027 per the resort's own update, so not an option for this trip.",
+   "cat": null
+  }
+ ],
+ "activities": [
+  {
+   "name": "Woodwind sunset sail",
+   "price": "~$85 adult (Fri 3:30 PM, ~3 h)",
+   "url": "https://woodwindbonaire.com/",
+   "note": "Price from a search snippet of their site; confirm.",
+   "cat": "Sail & snorkel",
+   "g": {
+    "rating": 4.8,
+    "count": 354,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Mushi Mushi catamaran sail & snorkel",
+   "price": "from ~$105 (cruise-line listing)",
+   "url": "https://www.carnival.com/shore-excursions/bonaire/sail--snorkel-on-mushi-mushi-catamaran-443020",
+   "note": "Cruise-excursion price; booking direct may differ.",
+   "cat": "Sail & snorkel"
+  },
+  {
+   "name": "Other top-rated sail/snorkel boats",
+   "price": "see sites",
+   "url": "https://bonaire.com/en/tours/",
+   "note": "Melisa Sailing 5.0 (573), Epic Tours 4.9 (666), SeaCow Snorkeling 5.0 (259), all Google via bonaire.com.",
+   "cat": "Sail & snorkel",
+   "g": {
+    "rating": 5.0,
+    "count": 573,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Bioluminescence ('plankton') night snorkel",
+   "price": "$99 (Captain Jack boat tour) · shore tours ~$59–87",
+   "url": "https://www.captainjackbonaire.com/boat-tours/bioluminescence-snorkel-tour-on-bonaire/",
+   "note": "Best on dark (new-moon) nights.",
+   "cat": "Night",
+   "g": {
+    "rating": 4.9,
+    "count": 95,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Mangrove kayak (Lac Bay)",
+   "price": "$40–45 / 1 h · $60 / 2 h with snorkel · $75–80 night",
+   "url": "https://www.mangrovecenter.com/tours",
+   "note": null,
+   "cat": "Kayak",
+   "g": {
+    "rating": 4.8,
+    "count": 720,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Windsurf lesson: Jibe City (Lac Bay)",
+   "price": "Beginner $50 · beginner package $150 · private $110",
+   "url": "https://jibecity.com/rates.html",
+   "note": "Their rates page is dated 2020–21; confirm current prices.",
+   "cat": "Wind",
+   "g": {
+    "rating": 4.6,
+    "count": 784,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Kitesurf lesson: Kiteboarding Bonaire",
+   "price": "First 3 h lesson $290 · block of 3 $670",
+   "url": "https://www.kiteboardingbonaire.com/lessons",
+   "note": "Trade winds are strongest Jan–Aug; Oct–Dec is lighter.",
+   "cat": "Wind",
+   "g": {
+    "rating": 4.6,
+    "count": 231,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Washington Slagbaai National Park tour",
+   "price": "Private guided: $130 pp (4 people) to $340 (1 person)",
+   "url": "https://hopibonaire.com/en/offroad-tours/our-tours/washington-slagbaai-park-tour/",
+   "note": "Or drive yourselves (high-clearance truck). Nature Fee covers park entry. Closed Mondays; last entry 14:30.",
+   "cat": "Nature"
+  },
+  {
+   "name": "Flamingos",
+   "price": "Free (self-drive)",
+   "url": "https://stinapabonaire.org/washington-slagbaai-national-park/",
+   "note": "Flamingos are commonly seen at the southern salt pans (Pekelmeer) and Gotomeer/Slagbaai; sightings vary.",
+   "cat": "Nature"
+  },
+  {
+   "name": "Land sailing (Blokart)",
+   "price": "from $60 / 60 min",
+   "url": "https://bonairelandsailingadventures.rezdy.com/catalog/440932/landsailing",
+   "note": null,
+   "cat": "Land",
+   "g": {
+    "rating": 5.0,
+    "count": 301,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Cave tour (dry cave + snorkel cave)",
+   "price": "$60 pp (3.5 h) · cave + land-sail combo $110",
+   "url": "https://www.cavetoursbonaire.com/",
+   "note": "The combo saves $10 vs. booking both separately.",
+   "cat": "Land"
+  },
+  {
+   "name": "Horses: Rancho Washikemba 'Ride n Swim'",
+   "price": "$130 pp",
+   "url": "https://ranchowashikemba.com/2436-2/",
+   "note": "Swim with a horse in the east-coast lagoon.",
+   "cat": "Land",
+   "g": {
+    "rating": 5.0,
+    "count": 29,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "ATV / UTV east-coast tour (Rento Fun)",
+   "price": "ATV from ~$141 · 2-seat UTV ~$227",
+   "url": "https://rentofun.com/en/activity/341373/utv-two-seater-excursion",
+   "note": "Rento Fun is Google 3.8 (93), the lowest-rated outfit here.",
+   "cat": "Land"
+  },
+  {
+   "name": "Donkey Sanctuary",
+   "price": "$9 adult",
+   "url": "https://www.donkeysanctuary.org/en/bezoekhetpark",
+   "note": "Daily 10:00–16:00, last entry 15:00. Drive-through.",
+   "cat": "Land",
+   "g": {
+    "rating": 4.7,
+    "count": 1146,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Aquaspace semi-sub",
+   "price": "~$149 (cruise listing) · sunset sail from $130",
+   "url": "https://www.aquaspace-bonaire.com/our-tours",
+   "note": "Prices from third-party listings; check their site.",
+   "cat": "Sail & snorkel",
+   "g": {
+    "rating": 4.9,
+    "count": 144,
+    "src": "Google via bonaire.com"
+   }
+  },
+  {
+   "name": "Cadushy Distillery (Rincon)",
+   "price": "Free to visit",
+   "url": "https://bonaire.com/en/tours/the-cadushy-distillery/",
+   "note": "Cactus liqueur tasting; pairs with lunch in Rincon.",
+   "cat": "Land",
+   "g": {
+    "rating": 4.6,
+    "count": 692,
+    "src": "Google via bonaire.com"
+   }
+  }
+ ],
+ "save": [
+  "Pay the Visitor Entry Tax and Nature Fee only on the official sites; reseller sites add fees",
+  "Carib Inn's $125 6-day shore package beats VIP ($205) and Dive Friends ($234), and it's on-site",
+  "Carib Inn guest truck $490/week vs. Budget Hilux ~$59–62/day and Bonaire Truck Rental from $53/day (with tank rack): compare once dates are set",
+  "Klein Bonaire by $25 water taxi + your own snorkel gear instead of a $60–90 snorkel tour",
+  "Cave + land-sail combo $110 vs. $120 booked separately",
+  "Delfins Wellness Pass ($120) bundles a full beach/pool day with a 50-min massage",
+  "Eat local (Maiky, Posada, Kos Bon So) for $8–16 plates; see the Food tab",
+  "Fill up at the government-set fuel price (gasoline $1.64/L from Aug 28, 2026)"
+ ],
+ "unverified": [
+  "Smiling Buddha 'duo by Dec 15': the official page shows $150 for 2 sessions with no deadline. An older bonaireisland.com page shows a $120 special that looks outdated.",
+  "Buddy Dive 'Super Shore' (Aug 29–Oct 3, 2026) and 'Drive & Dive Mania' (to Aug 28, 2026): expired",
+  "Jibe City rates page is labeled 2020–2021",
+  "Mangrove Center: $40 vs $45 (1 h) and $75 vs $80 (night) on different official pages",
+  "Woodwind, Mushi Mushi, Aquaspace and ATV prices come from search snippets or third-party listings",
+  "Plaza Senti Spa: not open until 2027",
+  "Sinterklaas arrival date (expected Sat Nov 28) not officially confirmed yet"
+ ],
+ "links": [
+  {
+   "t": "Bonaire.com activities",
+   "u": "https://bonaire.com/en/tours/"
+  },
+  {
+   "t": "Bonaire.com spa & massage",
+   "u": "https://bonaire.com/en/spa-massage/"
+  },
+  {
+   "t": "Water taxi overview",
+   "u": "https://bonaire.com/en/water-taxi/"
+  },
+  {
+   "t": "STINAPA (parks)",
+   "u": "https://stinapabonaire.org/"
+  }
+ ],
+ "fetched": "Oct 9, 2026"
+}

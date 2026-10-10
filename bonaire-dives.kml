@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Bonaire Dive Map</name>
+<Style id="hotel"><IconStyle><color>ff0000d5</color><scale>1.8</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href></Icon></IconStyle></Style>
+<Style id="shore"><IconStyle><color>ffe5881e</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="advanced"><IconStyle><color>ff212121</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="boat"><IconStyle><color>ffaa248e</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="restricted"><IconStyle><color>ff008cfb</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="services"><IconStyle><color>ff327d2e</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="food_cheap"><IconStyle><color>ff7b8900</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="food_mid"><IconStyle><color>ff25a8f9</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="food_splurge"><IconStyle><color>ff37405d</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Style id="groceries"><IconStyle><color>ff42b37c</color><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+<Folder><name>Our hotel</name>
+<Placemark><name>Bruce Bowker&#x27;s Carib Inn</name><description>Address: J.A. Abraham Blvd 46, Kralendijk
+Our hotel. Small waterfront dive inn with an on-site PADI 5-Star dive center; daily boat trips 8:30 and 1:30 to north/south sites and Klein Bonaire. House reef/shore entry not confirmed on the official site, so ask at check-in.
+Source: OSM way 371233370 (hotel, J.A. Abraham Blvd); matches bonaire.com 12.14228,-68.27556; address from caribinn.com
+https://caribinn.com/</description><styleUrl>#hotel</styleUrl><Point><coordinates>-68.27549,12.14227,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Shore dive</name>
+<Placemark><name>1000 Steps</name><description>Skill: All levels
+Depth: 20–100 ft
+Easy water entry but a tough climb out of ~67 steps.
+Source: OSM way 1495901720 (BNMP #16); matches bonaire.com 12.2108,-68.3216</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.32187,12.21087,0</coordinates></Point></Placemark>
+<Placemark><name>Salt Pier</name><description>Skill: Beginner–intermediate
+Depth: 13–60 ft
+Closed when a salt ship is docked.
+Source: OSM pier way 26326561; matches Diveity 12.0833,-68.2838 and bonaire.com 12.0828,-68.2836</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.2835,12.0834,0</coordinates></Point></Placemark>
+<Placemark><name>Karpata</name><description>Skill: Intermediate–advanced
+Depth: 10–160 ft
+Mornings only, skip in north wind; the wall is advanced.
+Source: OSM node 663869440; matches bonaire.com 12.2195,-68.3521</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.35213,12.21929,0</coordinates></Point></Placemark>
+<Placemark><name>Andrea I</name><description>Skill: Easy / all levels
+Depth: Varies – ask shop
+Easy site and a good night dive.
+Source: OSM node 663869426; matches bonaire.com 12.1882,-68.2970</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.29673,12.18841,0</coordinates></Point></Placemark>
+<Placemark><name>Andrea II</name><description>Skill: Easy / all levels
+Depth: Varies – ask shop
+Easy site and a good night dive.
+Source: OSM node 636400643; matches bonaire.com 12.1913,-68.2980</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.29782,12.19136,0</coordinates></Point></Placemark>
+<Placemark><name>Oil Slick Leap</name><description>Skill: Easy–intermediate
+Depth: 10–80 ft
+Ladder or giant-stride entry; barracuda and turtles; easy night site.
+Source: OSM node 663869425; matches bonaire.com 12.2002,-68.3086</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.30872,12.20017,0</coordinates></Point></Placemark>
+<Placemark><name>Angel City</name><description>Skill: Intermediate
+Depth: Varies – ask shop
+Double reef; can run current.
+Source: OSM node 663869415; matches bonaire.com 12.1034,-68.2872</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.28721,12.10339,0</coordinates></Point></Placemark>
+<Placemark><name>Alice in Wonderland</name><description>Skill: Intermediate
+Depth: Varies – ask shop
+Double reef; can run current.
+Source: OSM node 635881804; matches Diveity 12.0992,-68.2862 (bonaire.com point rejected: it duplicates Hilma Hooker)</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.28529,12.0998,0</coordinates></Point></Placemark>
+<Placemark><name>Bari Reef</name><description>Skill: Beginner
+Depth: Varies – ask shop
+House reef with very high fish diversity.
+Source: OSM node 313862678 (BNMP #30); matches bonaire.com 12.1672,-68.2871</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.2872,12.16747,0</coordinates></Point></Placemark>
+<Placemark><name>Buddy&#x27;s Reef</name><description>Skill: Beginner
+Depth: Varies – ask shop
+Buddy Dive house reef with high fish diversity.
+Source: OSM node 635094204; matches bonaire.com 12.1708,-68.2885</description><styleUrl>#shore</styleUrl><Point><coordinates>-68.28882,12.17103,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Advanced</name>
+<Placemark><name>Hilma Hooker (wreck)</name><description>Skill: Advanced
+Depth: 60–110 ft
+236-ft cargo wreck on sand between the Angel City reefs. Shore or boat (sources conflict), so confirm with your shop. Pin is the wreck; the shore marker is on the road just inland.
+Source: OSM node 635881808; matches Diveity 12.1041,-68.2896 (bonaire.com 12.1051,-68.2885 = shore entry)</description><styleUrl>#advanced</styleUrl><Point><coordinates>-68.29012,12.10375,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Boat only (Klein Bonaire)</name>
+<Placemark><name>The Forest (Klein Bonaire)</name><description>Skill: Advanced
+Depth: 25–100 ft
+Deep black-coral slope on Klein&#x27;s southwest corner. Boat only.
+Source: Diveity 12.1490,-68.3265; fits the SW corner of Klein on the OSM coastline (~70 m off). Approximate; bonaire.com point rejected (1 km offshore)</description><styleUrl>#boat</styleUrl><Point><coordinates>-68.3265,12.149,0</coordinates></Point></Placemark>
+<Placemark><name>No Name (Klein Bonaire)</name><description>Skill: Beginner–intermediate
+Depth: Varies – ask shop
+Reef off No Name Beach on Klein&#x27;s north shore. Boat or water taxi.
+Source: bonaire.com 12.1687,-68.3052; sits just off No Name Beach (OSM beach way 317794966)</description><styleUrl>#boat</styleUrl><Point><coordinates>-68.3052,12.1687,0</coordinates></Point></Placemark>
+<Placemark><name>Ebo&#x27;s Reef (Klein Bonaire)</name><description>Skill: Intermediate
+Depth: Varies – ask shop
+Known for big elephant-ear sponges. Boat only.
+Source: bonaire.com 12.1684,-68.3137 (single source; ~90 m off Klein&#x27;s north coast on OSM)</description><styleUrl>#boat</styleUrl><Point><coordinates>-68.3137,12.1684,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Restricted (permit/guided)</name>
+<Placemark><name>Town Pier</name><description>Skill: Guided only
+Depth: Shallow
+Shallow pillars with frogfish and seahorses. Night dive only, guided, with an operator permit.
+Source: bonaire.com 12.1492,-68.2773; at OSM Town Pier way 320348590</description><styleUrl>#restricted</styleUrl><Point><coordinates>-68.2773,12.1492,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Shops, stay, airport, hospital</name>
+<Placemark><name>VIP Diving</name><description>Dive shop. About $205 for 6 days of unlimited shore diving.
+Source: OSM way 352388464; matches bonaire.com 12.13941,-68.27554
+https://www.vipdiving.com/air-packages</description><styleUrl>#services</styleUrl><Point><coordinates>-68.27554,12.13941,0</coordinates></Point></Placemark>
+<Placemark><name>Dive Friends @ Yellow Submarine</name><description>Dive Friends&#x27; main Kralendijk shop. 6 days of shore diving $234, gear $57/day. Yellow Sub site out front.
+Source: OSM way 366235496; matches bonaire.com 12.16032,-68.28187
+https://www.divefriendsbonaire.com/price-list</description><styleUrl>#services</styleUrl><Point><coordinates>-68.28187,12.1603,0</coordinates></Point></Placemark>
+<Placemark><name>Buddy Dive Resort</name><description>Dive resort with drive-through tank fills. Buddy&#x27;s Reef out front.
+Source: bonaire.com 12.170845,-68.28721; matches OSM way 372107795
+https://buddydive.com/resort/rates-specials/</description><styleUrl>#services</styleUrl><Point><coordinates>-68.28721,12.170845,0</coordinates></Point></Placemark>
+<Placemark><name>AB Dive</name><description>Dive shop, inland in Kralendijk. From about $34/day.
+Source: OSM way 1500257649; matches bonaire.com 12.14520,-68.26883
+https://www.ab-dive.com/</description><styleUrl>#services</styleUrl><Point><coordinates>-68.26883,12.1452,0</coordinates></Point></Placemark>
+<Placemark><name>Chogogo Dive &amp; Beach Resort</name><description>Best stay for EV charging: public Type 2 charger next door at Isidel Beach Park. A US Tesla needs a Type 2 adapter.
+Source: bonaire.com 12.16658,-68.28578; matches OSM way 1085565450</description><styleUrl>#services</styleUrl><Point><coordinates>-68.28578,12.16658,0</coordinates></Point></Placemark>
+<Placemark><name>Isidel Beach Park (EV charger area)</name><description>Public Type 2 EV charger reported here. Pin is the park, not the exact pole.
+Source: OSM park way 1375624159 (charger pole itself not mapped)</description><styleUrl>#services</styleUrl><Point><coordinates>-68.2866,12.16733,0</coordinates></Point></Placemark>
+<Placemark><name>Flamingo Airport (BON)</name><description>Bonaire International Airport terminal.
+Source: OSM terminal node 278302307 (IATA BON)</description><styleUrl>#services</styleUrl><Point><coordinates>-68.27687,12.13327,0</coordinates></Point></Placemark>
+<Placemark><name>Fundashon Mariadal Hospital + Recompression Chamber</name><description>Kaya Soeur Bartola 2, Kralendijk. Hospital +599 715 8900. Recompression (decompression) chamber is here.
+Source: OSM way 366767483 (tagged decompression chamber); matches bonaire.com 12.15400,-68.27502</description><styleUrl>#services</styleUrl><Point><coordinates>-68.2747,12.15384,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Food: cheap/local</name>
+<Placemark><name>Maiky Snack</name><description>Rating: 4.4/5 from 202 reviews | Verdict: Good (Locals&#x27; favorite goat stew; very limited hours)
+  Google via bonaire.com: 4.5 (163) https://bonaire.com/en/restaurants/maiky-snack/
+  TripAdvisor: 4.2 (39), #83 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d4046608-Reviews.html
+Reviews: Reviewers love the authentic goat stew and local vibe at fair prices; the main gripes are the short weekend-only hours and that dishes sell out. A few older TripAdvisor reviews found the stew gristly.
+Ratings fetched Oct 9, 2026
+Local goat/beef stobá. Fri–Sun ~11:00–15:00 only, cash preferred; goat can sell out by ~2 PM.
+Source: OSM node 2936588678 (Kaminda Nieuw Amsterdam 30, off Kaminda Sorobon); matches bonaire.com 12.14035,-68.24444</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.24464,12.14045,0</coordinates></Point></Placemark>
+<Placemark><name>Cactus Blue food truck</name><description>Rating: 4.7/5 from 1,643 reviews | Verdict: Must try (Top-rated; famous lionfish burger)
+  Google via bonaire.com: 4.9 (367) https://bonaire.com/en/restaurants/cactus-blue-foodtruck-bonaire/
+  TripAdvisor: 4.6 (1,276), #1 of 12 quick bites in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d1166038-Reviews.html
+Reviews: Repeatedly called the best burgers on the island, especially the lionfish burger, with very friendly owners and fresh juices; the only common complaint is price (~$26 for a lionfish burger).
+Note: Hours differ by source: bonaire.com shows Tue–Thu 11–15 only, vs Mon–Fri elsewhere. Check before driving.
+Ratings fetched Oct 9, 2026
+Burgers, wraps, lionfish burgers (they sell out). Mon–Fri 11:00–15:00. At Donkey Beach / dive site #37 Corporal Meiss, start of the runway.
+Source: OSM node 5196524223; matches bonaire.com 12.13085,-68.28423
+https://www.cactusblue.us/location/</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.28437,12.13054,0</coordinates></Point></Placemark>
+<Placemark><name>Posada Para Mira</name><description>Rating: 4.5/5 from 991 reviews | Verdict: Must try (Best-reviewed local Krioyo food + views)
+  Google via bonaire.com: 4.5 (630) https://bonaire.com/en/restaurants/posada-para-mira/
+  TripAdvisor: 4.4 (361), #1 of 6 restaurants in Rincon https://www.tripadvisor.com/Restaurant_Review-g8655349-d4056219-Reviews.html
+Reviews: Praised for goat and beef stew, iguana soup, conch and fresh fish in a garden setting with hill views and friendly service; the main knock is that it isn&#x27;t cheap.
+Ratings fetched Oct 9, 2026
+Rincon local stews $18–21, veggie plate $20. Hours conflict between sources, call ahead.
+Source: OSM way 372101986; matches bonaire.com 12.23656,-68.33946
+https://www.posadaparamira.com/menus?menu=food</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.33946,12.23652,0</coordinates></Point></Placemark>
+<Placemark><name>Rose Inn / Kos Bon So</name><description>Rating: 4.5/5 from 428 reviews | Verdict: Good (Cheap, generous local plates in Rincon)
+  Google (Rose Inn) via bonaire.com: 4.5 (93) https://bonaire.com/en/restaurants/rose-inn/
+  Google (Kos Bon So) via bonaire.com: 4.5 (311) https://bonaire.com/en/restaurants/kos-bon-so/
+  TripAdvisor (Kos Bon So): 4.8 (24), #2 of 6 restaurants in Rincon https://www.tripadvisor.com/Restaurant_Review-g8655349-d25407163-Reviews.html
+Reviews: Two neighbouring local spots: Kos Bon So is liked for ribs, grilled chicken, conch and cold cheap beer with big portions; Rose Inn for goat/beef stew and personal service. Downsides: disposable plates and some waits.
+Note: This pin combines two separate places; ratings are listed per place.
+Ratings fetched Oct 9, 2026
+Rincon local stews and fish, Kaya Guyaba. Hours conflict between sources, call ahead.
+Source: OSM way 371773495 (Kos Bon So, Kaya Guyaba); bonaire.com Rose Inn 12.23731,-68.32980 and Kos Bon So 12.23751,-68.32981</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.32983,12.23748,0</coordinates></Point></Placemark>
+<Placemark><name>Nadia Snack Bar</name><description>Rating: 4.4/5 from 90 reviews | Verdict: OK (Decent rating but few recent reviews)
+  Google via bonaire.com: 4.4 (90) https://bonaire.com/en/restaurants/nadia-snack-bar-restaurant/
+Reviews: Reviewers like the cheap, hot, fresh Chinese-style local dishes and take-away (e.g. sweet-and-sour shrimp) and the friendly owner. Little to go on: the newest reviews shown are from early 2025.
+Note: No recent (2025–26) reviews found, so current quality is unverified.
+Ratings fetched Oct 9, 2026
+Local meals ~$8–12 (price unverified). Kaya Andres A. Emerenciana 6.
+Source: bonaire.com 12.14498,-68.26521; matches Google plus code 4PVM+XWV (TripTap) and address (Waze/FindYello)</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.26521,12.14498,0</coordinates></Point></Placemark>
+<Placemark><name>Panaderia Seruva</name><description>Rating: 4.5/5 from 125 reviews | Verdict: Good (Loved local bakery; go early)
+  Google via bonaire.com: 4.5 (125) https://bonaire.com/en/restaurants/panaderia-seruva/
+Reviews: Fans like the fresh bread, pastechi and coconut treats and the caring service; the main warning is that items sell out early.
+Ratings fetched Oct 9, 2026
+Early breakfast bakery, opens ~5:00 (hours unverified).
+Source: OSM way 419725924; matches bonaire.com 12.15044,-68.26263</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.26261,12.15025,0</coordinates></Point></Placemark>
+<Placemark><name>Alma Lusa Bakery</name><description>Rating: 3.9/5 from 19 reviews | Verdict: OK (Mixed reviews, small sample)
+  Google via bonaire.com: 3.9 (19) https://bonaire.com/en/restaurants/alma-lusa-bakery-pastries/
+Reviews: Some find everything tasty and high quality; others report little stock, small, pricey portions and closing earlier than posted.
+Ratings fetched Oct 9, 2026
+Bakery &amp; pastries, 7:00 Mon–Sat (hours unverified).
+Source: OSM node 4769577821; matches bonaire.com 12.15335,-68.27763</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.27759,12.15334,0</coordinates></Point></Placemark>
+<Placemark><name>Coffee Stop</name><description>Rating: 4.9/5 from 31 reviews | Verdict: Good (Great coffee &amp; service, few reviews)
+  Google via bonaire.com: 4.9 (31) https://bonaire.com/en/restaurants/coffee-stop-bonaire/
+Reviews: Recent reviews rave about the coffee and very friendly service close to the cruise terminal. Only ~31 reviews.
+Note: One Sept 2026 review calls it &#x27;Dule Coffee Shop&#x27;, so it may have been renamed. Confirm on arrival.
+Ratings fetched Oct 9, 2026
+Coffee &amp; brunch, opens 7:00, closed Sunday (hours unverified).
+Source: bonaire.com 12.15234,-68.27602 (single point source; street Kaya L.D. Gerharts confirmed, consistent with OSM shops there)</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.27602,12.15234,0</coordinates></Point></Placemark>
+<Placemark><name>The Dock (Ocean Breeze Marina)</name><description>Rating: 4.5/5 from 392 reviews | Verdict: Good (Solid food, Thursday BBQ)
+  Google via bonaire.com: 4.5 (392) https://bonaire.com/en/restaurants/the-dock-bonaire/
+Reviews: Recent diners praise the tuna steak, ribs, fresh fish, cocktails and the Thursday BBQ in a small-harbour setting; few complaints in recent reviews.
+Ratings fetched Oct 9, 2026
+Breakfast from 7:00 next to the dive boats (hours unverified).
+Source: OSM node 8262018429 (Kaya International 90); matches bonaire.com 12.13512,-68.27210</description><styleUrl>#food_cheap</styleUrl><Point><coordinates>-68.27184,12.13525,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Food: mid-range</name>
+<Placemark><name>Blennies (Buddy Dive)</name><description>Rating: 3.8/5 from 516 reviews | Verdict: Skip (Lowest rated; slow, uneven food)
+  Google via bonaire.com: 4.0 (191) https://bonaire.com/en/restaurants/blennies-restaurant/
+  TripAdvisor: 3.7 (325), #65 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d7892940-Reviews.html
+Reviews: The sunset view and breakfast spot get compliments, but 2026 reviews complain about greasy or lukewarm food, long waits and wrong orders.
+Note: Several negative reviews in Aug–Sep 2026.
+Ratings fetched Oct 9, 2026
+Over the dive dock. Breakfast buffet 7–10 $27, plus lunch and dinner.
+Source: OSM node 13018691295; matches bonaire.com 12.17063,-68.28805
+https://buddydive.com/resort/restaurants-bars/</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.28801,12.17061,0</coordinates></Point></Placemark>
+<Placemark><name>Rum Runners (Captain Don&#x27;s Habitat)</name><description>Rating: 4.1/5 from 2,907 reviews | Verdict: OK (Great view, inconsistent food)
+  Google via bonaire.com: 4.1 (891) https://bonaire.com/en/restaurants/rum-runners/
+  TripAdvisor: 4.1 (2,016), #9 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d1453263-Reviews.html
+Reviews: People like the waterfront view and some pizzas; recent reviews are split, with cold or flavorless ribs and unfriendly staff on some nights.
+Ratings fetched Oct 9, 2026
+Daily 7–22, Monday BBQ night. Kaya Gob. N. Debrot 103.
+Source: OSM node 4725063292; matches bonaire.com 12.17208,-68.28864</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.28858,12.17198,0</coordinates></Point></Placemark>
+<Placemark><name>Cuba Compagnie</name><description>Rating: 4.3/5 from 3,166 reviews | Verdict: Good (Fun Thursday salsa night, good value)
+  Google via bonaire.com: 4.4 (1,428) https://bonaire.com/en/restaurants/cuba-compagnie/
+  TripAdvisor: 4.3 (1,738), #23 of 170 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d6478724-Reviews.html
+Reviews: Loved for the lively atmosphere, mojitos, tuna and snapper and the Thursday salsa night; complaints include slow or inattentive service and some salty or bland dishes.
+Ratings fetched Oct 9, 2026
+Cuban/local, Kaya Grandi 1. Kitchen from 17:00, Thursday salsa night; reserve.
+Source: OSM way 366605934; matches bonaire.com 12.14990,-68.27657
+https://cubacompagniebonaire.nl/restaurant/</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.27662,12.15002,0</coordinates></Point></Placemark>
+<Placemark><name>Bon Tapa</name><description>Rating: 4.6/5 from 437 reviews | Verdict: Good (Tasty tapas, a few recent misses)
+  Google via bonaire.com: 4.7 (287) https://bonaire.com/en/restaurants/bon-tapa-restaurant-bonaire/
+  TripAdvisor: 4.5 (150), #2 of tapas restaurants in Kralendijk https://www.tripadvisor.com/Restaurants-g147268-zfd10942-Kralendijk_Bonaire-Tapas.html
+Reviews: Most reviewers enjoy the varied tapas (honey chicken, garlic shrimp, short rib) and friendly staff; a few 2026 reviews mention stale bread, flies and weaker value than before.
+Ratings fetched Oct 9, 2026
+Tapas $8.75–18.50, veggie options, 17:00–midnight. Kaya Isla Riba 1.
+Source: OSM node 4348505390; matches bonaire.com 12.15092,-68.27715
+https://www.bontapa.com/</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.27713,12.151,0</coordinates></Point></Placemark>
+<Placemark><name>Sebastian&#x27;s</name><description>Rating: 4.0/5 from 2,777 reviews | Verdict: OK (Go for the sunset pier, not the food)
+  Google via bonaire.com: 4.1 (1,219) https://bonaire.com/en/restaurants/sebastian-s-restaurant-bar-lounge/
+  TripAdvisor: 4.0 (1,558), #48 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d5490282-Reviews.html
+Reviews: The pier sunset setting is the star; food reviews are average and service is often called slow, with high prices.
+Ratings fetched Oct 9, 2026
+Waterfront, mains ~$28–40. Sunday Italian night, Wednesday 4-course $39. Reserve a pier table for sunset.
+Source: OSM node 1277196793; matches bonaire.com 12.14034,-68.27579
+https://sebastiansrestaurantbonaire.com/</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.27584,12.14062,0</coordinates></Point></Placemark>
+<Placemark><name>Mezze</name><description>Rating: 4.6/5 from 1,380 reviews | Verdict: Good (High ratings, but ownership change)
+  Google via bonaire.com: 4.6 (492) https://bonaire.com/en/restaurants/mezze-restaurant/
+  TripAdvisor: 4.6 (888), #12 of 170 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d10836060-Reviews.html
+Reviews: Recent Google reviews praise the hummus, octopus, ribeye, halal and vegan options and a welcoming owner; several TripAdvisor regulars say quality dropped after the restaurant was sold (slower service, smaller menu, higher prices).
+Note: Reported sale/ownership change; older ratings may not reflect the current kitchen.
+Ratings fetched Oct 9, 2026
+Mediterranean, vegetarian/vegan friendly. Tue–Sat 18:00–22:30, closed Sun–Mon.
+Source: OSM way 315920612; matches bonaire.com 12.14748,-68.27637
+http://www.mezzebonaire.com/location</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.27631,12.14748,0</coordinates></Point></Placemark>
+<Placemark><name>Hang Out Beachbar (Lac Bay)</name><description>Rating: 4.5/5 from 1,092 reviews | Verdict: Good (Best lunch at Lac Bay; Thursday table BBQ)
+  Google via bonaire.com: 4.6 (713) https://bonaire.com/en/restaurants/hang-out-beachbar/
+  TripAdvisor: 4.4 (379), #36 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d6950623-Reviews.html
+Reviews: Relaxed beach bar with big portions and a much-loved Thursday table BBQ; some mention slow or brusque service and canned-tasting cocktails.
+Ratings fetched Oct 9, 2026
+Lac Bay lunch option (details unverified).
+Source: OSM way 317814441; matches bonaire.com 12.09295,-68.23628</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.23625,12.09295,0</coordinates></Point></Placemark>
+<Placemark><name>Sebastian&#x27;s Beach (Lac Bay)</name><description>Rating: 4.1/5 from 386 reviews | Verdict: OK (Nice spot, mixed food reviews)
+  Google via bonaire.com: 4.1 (386) https://bonaire.com/en/restaurants/sebastian-s-beach/
+Reviews: Comfortable loungers and water views; recent reviews are split between tasty sandwiches and &#x27;really bad&#x27; food or unwelcoming service.
+Ratings fetched Oct 9, 2026
+Lac Bay lunch option (details unverified).
+Source: OSM node 12146515005; matches bonaire.com 12.09334,-68.23631</description><styleUrl>#food_mid</styleUrl><Point><coordinates>-68.23642,12.09349,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Food: splurge</name>
+<Placemark><name>Restaurant Flora (Hotel Bougainvillea)</name><description>Rating: 4.8/5 from 302 reviews | Verdict: Must try (Highest combined rating; beachfront fine dining)
+  Google via bonaire.com: 4.7 (134) https://bonaire.com/en/restaurants/restaurant-flora/
+  TripAdvisor: 4.9 (168), #5 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d32725698-Reviews.html
+Reviews: Recent diners rave about the inventive dishes (e.g. snapper with three sauces), beachfront setting and very warm staff; the only knocks are small portions and fine-dining prices.
+Ratings fetched Oct 9, 2026
+Eeg Boulevard 2, Belnem. No dinner Wed/Thu; reserve.
+Source: bonaire.com 12.12983,-68.28494; matches OSM building at EEG Boulevard 2 (way 727872807)
+https://www.hotelbougainvillea.nl/flora</description><styleUrl>#food_splurge</styleUrl><Point><coordinates>-68.28494,12.12983,0</coordinates></Point></Placemark>
+<Placemark><name>Brass Boer (Delfins)</name><description>Rating: 4.4/5 from 1,123 reviews | Verdict: Good (Raves since reopening; pricey)
+  Google via bonaire.com: 4.5 (486) https://bonaire.com/en/restaurants/brass-boer-restaurant-bonaire/
+  TripAdvisor: 4.3 (637), #26 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d13172168-Reviews.html
+Reviews: October 2026 reviews (after the Aug 2026 reopening) are glowing about the tasting menu, sunset setting and service; the main caveat is price. TripAdvisor&#x27;s rating includes many pre-reopening reviews.
+Note: Reopened Aug 2026 with a new menu, so older reviews may not apply.
+Ratings fetched Oct 9, 2026
+Reopened Aug 1, 2026 with a new menu; reserve.
+Source: OSM way 420018005; matches bonaire.com 12.11546,-68.29434</description><styleUrl>#food_splurge</styleUrl><Point><coordinates>-68.29425,12.11534,0</coordinates></Point></Placemark>
+<Placemark><name>Joe&#x27;s Restaurant</name><description>Rating: 4.5/5 from 1,409 reviews | Verdict: Must try (Consistently excellent, a top-10 on TripAdvisor)
+  Google via bonaire.com: 4.6 (512) https://bonaire.com/en/restaurants/joe-s-restaurant/
+  TripAdvisor: 4.4 (897), #10 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d3540861-Reviews.html
+Reviews: Recent reviews consistently praise the fresh fish (red snapper), shrimp, drinks and warm, welcoming service, a good post-dive dinner. No recurring complaints in the 2026 reviews sampled.
+Ratings fetched Oct 9, 2026
+Julio A. Abraham Blvd 87. Closed Wed/Thu. Christmas dinner Dec 25–26, $120.
+Source: OSM way 371413788; matches bonaire.com 12.13938,-68.27434
+https://www.joesbonaire.com/</description><styleUrl>#food_splurge</styleUrl><Point><coordinates>-68.27433,12.13943,0</coordinates></Point></Placemark>
+<Placemark><name>Capriccio</name><description>Rating: 4.4/5 from 1,859 reviews | Verdict: Good (Authentic Italian, big wine list)
+  Google via bonaire.com: 4.5 (373) https://bonaire.com/en/restaurants/capriccio-restaurant-and-boutique/
+  TripAdvisor: 4.4 (1,486), #18 of 169 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d4496113-Reviews.html
+Reviews: Loved for real Italian cooking (vitello tonnato, pasta), an extensive wine list and first-class service; reserve, it books up. Few complaints in 2026.
+Ratings fetched Oct 9, 2026
+Italian. Closed Mon–Tue.
+Source: OSM way 366570564; matches bonaire.com 12.14817,-68.27655
+https://capricciobonaire.com/contact/</description><styleUrl>#food_splurge</styleUrl><Point><coordinates>-68.27641,12.14822,0</coordinates></Point></Placemark>
+<Placemark><name>Ingridiënts (Buddy Dive)</name><description>Rating: 4.1/5 from 995 reviews | Verdict: OK (Pleasant, but uneven reviews)
+  Google via bonaire.com: 4.2 (210) https://bonaire.com/en/restaurants/ingridients-restaurant/
+  TripAdvisor: 4.1 (785), #31 of 170 restaurants in Kralendijk https://www.tripadvisor.com/Restaurant_Review-g147268-d4779052-Reviews.html
+Reviews: Recent Google reviews like the flavorful dishes, wine pairing and sunset terrace; TripAdvisor reviews are more mixed and one recent review raised a hygiene concern (staff hair over food).
+Note: One recent hygiene complaint on TripAdvisor (single report).
+Ratings fetched Oct 9, 2026
+Dinner Thu–Mon (hours unverified).
+Source: OSM node 634037501; matches bonaire.com 12.17092,-68.28832</description><styleUrl>#food_splurge</styleUrl><Point><coordinates>-68.28828,12.17082,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Groceries</name>
+<Placemark><name>Van den Tweel</name><description>Rating: 4.4/5 from 1,751 reviews
+  Google via bonaire.com: 4.4 (1,751) https://bonaire.com/en/restaurants/van-den-tweel-supermarket/
+Ratings fetched Oct 9, 2026
+Supermarket, Kaya Industria 39. Daily 8–20.
+Source: OSM way 287715708 (Kaya Industria 39); matches bonaire.com 12.14473,-68.26683</description><styleUrl>#groceries</styleUrl><Point><coordinates>-68.26733,12.14499,0</coordinates></Point></Placemark>
+<Placemark><name>Warehouse Bonaire</name><description>Rating: 4.3/5 from 942 reviews
+  Google via bonaire.com: 4.3 (942) https://bonaire.com/en/restaurants/warehouse-bonaire/
+Ratings fetched Oct 9, 2026
+Supermarket, Kaya Industria 24. Daily 8–20.
+Source: OSM node 2323714885; matches bonaire.com 12.14405,-68.26951</description><styleUrl>#groceries</styleUrl><Point><coordinates>-68.26951,12.14419,0</coordinates></Point></Placemark>
+<Placemark><name>BonDiGro</name><description>Rating: 4.2/5 from 455 reviews
+  Google via bonaire.com: 4.2 (455) https://bonaire.com/en/restaurants/bondigro-supermarket/
+Ratings fetched Oct 9, 2026
+Supermarket, Kaya Industria.
+Source: OSM way 472615489; matches bonaire.com 12.14477,-68.27149</description><styleUrl>#groceries</styleUrl><Point><coordinates>-68.27148,12.14488,0</coordinates></Point></Placemark>
+<Placemark><name>Top Supermarket</name><description>Rating: 3.7/5 from 335 reviews
+  Google via bonaire.com: 3.7 (335) https://bonaire.com/en/restaurants/top-supermarket/
+Ratings fetched Oct 9, 2026
+Downtown supermarket (corner of Kaya L.D. Gerharts / Soeur Bartola).
+Source: OSM way 366767471; matches bonaire.com 12.15278,-68.27563</description><styleUrl>#groceries</styleUrl><Point><coordinates>-68.2758,12.15264,0</coordinates></Point></Placemark>
+<Placemark><name>Daily Catch Fisherman&#x27;s Market</name><description>Rating: 4.8/5 from 162 reviews
+  Google via bonaire.com: 4.8 (162) https://bonaire.com/en/restaurants/daily-catch-fisherman-s-market-bonaire/
+Ratings fetched Oct 9, 2026
+Fresh local fish by the kilo plus take-out lunch. Kaya L.D. Gerharts 6C, across from Subway.
+Source: bonaire.com 12.15194,-68.27652; address (bonaireisland.com) matches OSM Subway/Gerharts 6 right there</description><styleUrl>#groceries</styleUrl><Point><coordinates>-68.27652,12.15194,0</coordinates></Point></Placemark>
+</Folder>
+</Document></kml>

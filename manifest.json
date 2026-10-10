@@ -1,0 +1,17 @@
+{
+  "name": "Our Bonaire Trip",
+  "short_name": "Bonaire",
+  "description": "Our Bonaire trip home base: map, diving, food, deals and info.",
+  "id": "/bonaire/",
+  "start_url": "/bonaire/#home",
+  "scope": "/bonaire/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fffaf0",
+  "theme_color": "#007c89",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

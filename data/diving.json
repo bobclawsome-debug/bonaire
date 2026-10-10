@@ -1,0 +1,143 @@
+{
+ "orientation": "STINAPA requires a checkout/orientation dive for anyone new to Bonaire, regardless of certification. Book it for the morning of day 1. Shops won't release independent shore tanks until you've done it.",
+ "orientation_src": "https://www.ab-dive.com/diving/mandatory-orientation-dive-protect-bonaire-s-marine-park",
+ "conditions": [
+  {
+   "k": "Water temp",
+   "v": "Warmest in Sep–Oct (~83°F / 28°C); averages ~81°F year-round. A 3 mm shorty or full suit; gloves are banned."
+  },
+  {
+   "k": "Visibility",
+   "v": "Typically 60–100+ ft on the west coast; mornings are best. Nearshore vis can drop after rain."
+  },
+  {
+   "k": "Rain",
+   "v": "Rainy season is Oct–Jan, with November the wettest. Showers are usually short and often at night or early morning."
+  },
+  {
+   "k": "Hurricanes",
+   "v": "Season ends Nov 30. Bonaire lies south of the main belt and direct hits are uncommon, but tropical waves can bring west-coast chop (wind reversals)."
+  },
+  {
+   "k": "Current",
+   "v": "Minimal at most leeward shore sites. Karpata, Red Slave and some Klein/south double-reef sites can run."
+  },
+  {
+   "k": "Night diving",
+   "v": "Allowed from 30 min after sunset at shore sites. Town Pier is guided/permit only."
+  }
+ ],
+ "conditions_src": [
+  "https://bonaire.com/en/travel-info/weather-climate/",
+  "https://riseanddive.com/best-time-to-dive-in-bonaire-october/"
+ ],
+ "operators": [
+  {
+   "name": "Carib Inn (our hotel)",
+   "g": {
+    "rating": 4.9,
+    "count": 100,
+    "src": "Google via bonaire.com"
+   },
+   "url": "https://caribinn.com/diving-packages/",
+   "prices": [
+    "Unlimited shore diving, 6 consecutive days (air, tank + weights): $125 (hotel & non-hotel guests)",
+    "6 boat dives over 6 days + unlimited air (hotel guests): $275",
+    "12 boat dives over 6 days + unlimited air (hotel guests): $425",
+    "Extra boat dives: $25 each",
+    "Prices include government taxes; Nature Fee ($40) is extra"
+   ],
+   "note": "Boats 8:30 AM and 1:30 PM. On-site, so no driving to fill tanks."
+  },
+  {
+   "name": "VIP Diving",
+   "g": {
+    "rating": 4.9,
+    "count": 423,
+    "src": "Google via bonaire.com"
+   },
+   "url": "https://www.vipdiving.com/air-packages",
+   "prices": [
+    "Unlimited air/nitrox 32%, 6 days: $205",
+    "1 day: $39",
+    "Single tank: $22"
+   ],
+   "note": "PADI 5★ IDC, drive-through tank pickup, nitrox included in packages."
+  },
+  {
+   "name": "Dive Friends Bonaire",
+   "g": {
+    "rating": 4.8,
+    "count": 204,
+    "src": "Google via bonaire.com"
+   },
+   "url": "https://www.divefriendsbonaire.com/",
+   "prices": [
+    "Unlimited shore diving, 6 days (air or nitrox): $234"
+   ],
+   "note": "7 locations island-wide; tank swaps at any of them."
+  },
+  {
+   "name": "Buddy Dive",
+   "g": {
+    "rating": 4.5,
+    "count": 760,
+    "src": "Google via bonaire.com"
+   },
+   "url": "https://buddydive.com/resort/rates-specials/",
+   "prices": [
+    "Rates are mostly Drive & Dive packages (room + truck + diving); low season Aug 15–Dec 18, 2026"
+   ],
+   "note": "Classic drive-thru fill station with air + nitrox lanes. Their Sept 'Super Shore' promo (Aug 29–Oct 3, 2026) has ended."
+  },
+  {
+   "name": "AB Dive",
+   "g": {
+    "rating": 4.9,
+    "count": 180,
+    "src": "Google via bonaire.com"
+   },
+   "url": "https://www.ab-dive.com/",
+   "prices": [
+    "Unlimited air/nitrox from $34/day (published May 2026)"
+   ],
+   "note": "Budget-friendly; non-expiring tank cards; drive-thru."
+  }
+ ],
+ "bring": [
+  "Your own dive computer, mask and SMB (safety sausage)",
+  "Hard-sole booties (entries are rock, rubble and concrete)",
+  "Dive flag for shore dives near boat traffic",
+  "Primary + backup torch for night dives",
+  "Rash guard / thin suit (no gloves allowed)",
+  "Reef-safe mineral sunscreen",
+  "Cert cards + Nature Fee QR code on your phone",
+  "Log of last dive (shops ask how recently you dived)"
+ ],
+ "rules": [
+  "Nature Fee QR + ID: rangers check",
+  "No gloves (medical exception only), no touching or taking anything",
+  "No fish feeding, no reef hooks, no chemical light sticks",
+  "No anchoring on the reef; use moorings",
+  "Lionfish spearing only with ELF certification",
+  "Night shore diving from 30 min after sunset; Town Pier only with an operator permit",
+  "Fines cited at $25–$300; rangers do patrol"
+ ],
+ "rules_src": [
+  "https://stinapabonaire.org/contact/frequently-asked-questions/"
+ ],
+ "avoid": [
+  "Salt Pier when a salt ship is docked: closed, no exceptions",
+  "East/windward coast unless a local shop briefs you on a wind reversal",
+  "Karpata and 1000 Steps entries in north swell; pick a house reef instead",
+  "Hilma Hooker unless you're AOW and current (60–110 ft); shore vs boat access is disputed, so ask the shop",
+  "Red Slave / southern tip as an early-week site (current)",
+  "Leaving anything in the truck at dive sites; break-ins are a long-standing problem",
+  "Expecting 2019-era coral: live coral cover fell from 24% (2019) to 9% (2025) after disease and bleaching. Fish and turtles are still great.",
+  "Last dive less than 24 h before your flight"
+ ],
+ "avoid_src": [
+  "https://stinapabonaire.org/wp-content/uploads/2026/02/Changing-Reefscape-of-Bonaire-as-a-Result-of-SCTLD-and-Bleaching-Short-Report-STINAPA.pdf"
+ ],
+ "week": "Suggested: Day 1 orientation + Bari/Andrea · Day 2 1000 Steps + Oil Slick Leap · Day 3 Salt Pier (if no ship) + Angel City · Day 4 Klein boat (Forest + a shallower site) · Day 5 Karpata AM (calm only) + house-reef night · Day 6 Hilma Hooker + spare."
+}

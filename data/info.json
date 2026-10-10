@@ -1,0 +1,113 @@
+{
+ "sections": [
+  {
+   "id": "around",
+   "h": "Getting around",
+   "items": [
+    "A pickup truck is the standard for shore diving: tanks ride in the bed (ask for a tank rack).",
+    "Rates found (Oct 2026): Carib Inn guest truck $490/week (guests only) · Budget Toyota Hilux $62/day (Oct 15–Nov 12) and $59/day (Nov 13–Dec 15), including $17/day CDW · Bonaire Truck Rental from $53/day including CDW, free 2nd driver and a tank rack.",
+    "Drive on the right; distances are in km. Watch for donkeys and goats. The northern coastal road narrows and is one-way north of Karpata (return via Rincon).",
+    "A 2WD pickup is fine for the south/central sites; high clearance helps for Karpata pull-offs and Washington Slagbaai.",
+    "Taxis: few and not metered; agree the fare first or book ahead (e.g. bonaire-taxi.com, Google 4.9 (38)).",
+    "Gas: government-set price. Gasoline $1.64/L, diesel $1.32/L (from Aug 28, 2026)."
+   ],
+   "src": [
+    "https://caribinn.com/rental-vehicles/",
+    "https://www.bonaire-budgetcar.com/Car-Rental-Rates.html",
+    "https://www.bonairetruckrental.com/",
+    "https://bonairegov.com/en/products-and-services/traffic-and-transport/fuel-prices"
+   ]
+  },
+  {
+   "id": "ev",
+   "h": "EV notes",
+   "items": [
+    "Not bringing an EV, so no adapter needed.",
+    "For reference: public charging is scarce. Three Type 2 (22 kW AC) sites: Chogogo/Isidel Beach Park (north of town) and Openbaar Ministerie downtown. No Tesla network, no DC fast charging."
+   ],
+   "src": [
+    "https://www.dynaf.com/dpoint-charging/",
+    "https://chargemap.com/en-us/dynaf-usd-isidel-beach-park.html"
+   ]
+  },
+  {
+   "id": "money",
+   "h": "Money & phones",
+   "items": [
+    "Currency is the US dollar; cards are widely accepted. Keep small bills for tips, fruit stands and small local spots (Maiky Snack prefers cash).",
+    "Visitor Entry Tax: card only.",
+    "eSIM: Digicel tourist eSIM ~$30 for 7 days/7 GB or ~$50 for 14 days/20 GB (per Digicel pages via search). Flow also sells an eSIM. Or check your US carrier's roaming plan."
+   ],
+   "src": [
+    "https://www.digicelgroup.com/bq/en/mobile/tourist_sim",
+    "https://discoverflow.co/en/web/bonaire/e-sim"
+   ]
+  },
+  {
+   "id": "weather",
+   "h": "Weather Oct–Dec",
+   "items": [
+    "Warm year-round, highs typically ~85–89°F. Sea ~83°F in Oct.",
+    "Rainy season is Oct–Jan, with November the wettest. Showers are usually short, often at night or early morning.",
+    "Hurricane season ends Nov 30. Bonaire sits outside the main belt."
+   ],
+   "src": [
+    "https://bonaire.com/en/travel-info/weather-climate/"
+   ]
+  },
+  {
+   "id": "flights",
+   "h": "Flights (summary)",
+   "items": [
+    "American: Miami (MIA) to Bonaire.",
+    "Delta: Atlanta (ATL) on Saturdays.",
+    "United: Houston (IAH) on Saturdays/Sundays; Newark (EWR) from about Oct 31.",
+    "Wi-Fi: Starlink only possibly on United; don't count on it.",
+    "Our flights: TBD."
+   ],
+   "note": "From earlier flight research. Re-check schedules when booking."
+  },
+  {
+   "id": "safety",
+   "h": "Safety",
+   "items": [
+    "Truck break-ins at dive sites are the #1 complaint. Leave nothing in the truck; many divers leave windows down and the cab empty.",
+    "Marine hazards: fire coral and urchins at entries, lionfish spines (don't touch), boat traffic near piers (use a dive flag/SMB), current at Karpata/Red Slave.",
+    "Salt Pier is closed when a ship is docked.",
+    "Last dive at least 24 h before flying."
+   ]
+  },
+  {
+   "id": "emergency",
+   "h": "Emergency",
+   "items": [
+    "Hospital + recompression chamber: Fundashon Mariadal, Kralendijk · +599 715 8900",
+    "Police: 911",
+    "Ambulance: 912 (sources differ between 911 and 912; confirm at orientation)",
+    "DAN Emergency Hotline: +1 919-684-9111"
+   ],
+   "tel": true
+  },
+  {
+   "id": "todo",
+   "h": "Things to do",
+   "items": [
+    "See Deals & Activities for prices and ratings: sunset sails, Klein Bonaire, mangrove kayak, night bioluminescence snorkel, windsurf at Lac Bay, Washington Slagbaai, caves, land sailing, horses, Donkey Sanctuary.",
+    "Free: flamingo spotting at the salt pans, Lac Bay/Sorobon beach, the slave huts and salt pyramids in the south, sunset on the Kralendijk boulevard."
+   ]
+  },
+  {
+   "id": "events",
+   "h": "Events",
+   "items": [
+    "Bonaire Regatta: Oct 11–17, 2026 (races Oct 12–16, closing Boat Party Oct 17). Town is busy; extra water checks.",
+    "Sinterklaas (Sanikolas) arrival: expected Sat Nov 28, 2026, ~3 PM at the Kralendijk harbor (not yet officially confirmed)."
+   ],
+   "src": [
+    "https://bonairegov.com/en/updates/events/evenement/regatta-bonaire-2026-11-oktober-17-oktober",
+    "https://bonaire.com/en/events/saint-nicholas-bonaire/"
+   ]
+  }
+ ],
+ "updated": "Oct 9, 2026"
+}
