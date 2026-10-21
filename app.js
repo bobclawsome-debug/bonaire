@@ -1,5 +1,5 @@
 'use strict';
-const TABS=[['home','🏝️','Home'],['map','🗺️','Map'],['diving','🤿','Diving'],['food','🍴','Food'],['deals','🎟️','Deals'],['info','ℹ️','Info']];
+const TABS=[['home','🏝️','Home'],['map','🗺️','Map'],['itinerary','📅','Plan'],['diving','🤿','Diving'],['food','🍴','Food'],['deals','🎟️','Deals'],['rentals','📷','Rentals'],['info','ℹ️','Info']];
 const CATS={hotel:['Our hotel','#d50000'],shore:['Shore dive','#1e88e5'],advanced:['Advanced','#212121'],boat:['Boat only (Klein Bonaire)','#8e24aa'],restricted:['Restricted (permit/guided)','#fb8c00'],services:['Shops, stay, airport, hospital','#2e7d32'],food_cheap:['Cheap / local','#00897b'],food_mid:['Mid-range','#f9a825'],food_splurge:['Splurge','#5d4037'],groceries:['Groceries','#7cb342']};
 const VC={'Must try':'#2e7d32','Good':'#1565c0','OK':'#757575','Skip':'#e65100'};
 const D={};
@@ -28,12 +28,12 @@ window.showOnMap=showOnMap;
 function home(){const t=D.trip,h=t.hotel;const st=JSON.parse(localStorage.getItem('bonaire-checklist')||'{}');
  const done=t.checklist.filter(c=>st[c.id]).length;
  $('#v-home').innerHTML=`<div class="wrap">
- <div class="hero"><h1>🌊 ${esc(t.title)}</h1><p>${esc(t.subtitle)} · Dates <span class="tbd">TBD</span></p></div>
+ <div class="hero"><h1>🌊 ${esc(t.title)}</h1><p>${esc(t.subtitle)} · Nov 9–16, 2026</p></div>
  <h2>🏠 Our hotel</h2>
  <div class="card"><h3>${esc(h.name)}</h3><div class="meta">${esc(h.addr)}</div><ul class="clean">${h.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
  <a class="btn" href="${dir(h.lat,h.lon)}" target="_blank" rel="noopener">📍 Directions</a><a class="btn alt" href="${esc(h.url)}" target="_blank" rel="noopener">Website</a><button class="btn alt" onclick="showOnMap(${esc(JSON.stringify(h.name))})">Show on map</button>${srcs(h.src)}</div>
  <h2>🧳 Trip details</h2>
- <div class="card"><div class="kv">${t.tbd.map(x=>`<b>${esc(x.k)}</b><span><span class="tbd">TBD</span> ${esc(x.v.replace(/^TBD ?/,''))}</span>`).join('')}</div>
+ <div class="card"><div class="kv">${t.tbd.map(x=>`<b>${esc(x.k)}</b><span>${x.known?'✅ '+esc(x.v):'<span class="tbd">TBD</span> '+esc(x.v.replace(/^TBD ?/,''))}</span>`).join('')}</div>
  <div class="small" style="margin-top:8px">This site is public, so confirmation numbers and personal details stay off it.</div></div>
  <h2>✅ Before you go <span class="meta" id="ckcount">(${done}/${t.checklist.length})</span></h2>
  <div class="card"><div class="progress"><div id="ckbar" style="width:${100*done/t.checklist.length}%"></div></div>
@@ -112,12 +112,27 @@ function info(){const telify=s=>esc(s).replace(/(\+?\d[\d\s-]{6,}\d)/g,m=>`<a cl
  ${D.info.sections.map(s=>`<h2 id="i-${s.id}">${esc(s.h)}</h2><div class="card"${s.id==='emergency'?' style="border-left:5px solid #d50000"':''}><ul class="clean">${s.items.map(x=>`<li>${s.tel?telify(x):esc(x)}</li>`).join('')}</ul>${s.note?`<div class="small">${esc(s.note)}</div>`:''}${srcs(s.src)}</div>`).join('')}
  ${foot()}</div>`}
 
+// ---------- Rentals ----------
+function rentals(){const r=D.rentals;
+ $('#v-rentals').innerHTML=`<div class="wrap"><h1>📷 Rentals</h1><div class="meta">Checked ${esc(r.checked)}. <b>${esc(r.status)}</b> — all items below are options only.</div>
+ <div class="chips">${r.sections.map(s=>`<a class="chip" style="text-decoration:none" href="#rentals" onclick="document.getElementById('r-${s.id}').scrollIntoView({behavior:'smooth'});return false">${esc(s.h)}</a>`).join('')}</div>
+ ${r.sections.map(s=>`<h2 id="r-${s.id}">${esc(s.h)}</h2><div class="grid">${s.items.map(a=>`<div class="card"><h3>${esc(a.name)} <span class="tag">Not booked</span></h3><div class="price">${esc(a.price)}</div>${a.note?`<div style="font-size:14px;margin-top:4px">${esc(a.note)}</div>`:''}${a.flag?`<div class="small" style="color:#e65100;margin-top:4px">⚠️ ${esc(a.flag)}</div>`:''}${a.url?`<a class="btn sm alt" href="${esc(a.url)}" target="_blank" rel="noopener">Details ↗</a>`:''}</div>`).join('')}</div>`).join('')}
+ ${foot()}</div>`}
+
+// ---------- Itinerary ----------
+const DIVE={shore:['🤿 Shore dives','#1e88e5'],boat:['🚤 Boat dives','#8e24aa'],none:['🚫 No diving','#757575']};
+function itinerary(){const it=D.itinerary;
+ $('#v-itinerary').innerHTML=`<div class="wrap"><h1>📅 Itinerary</h1><div class="card" style="border-left:5px solid var(--coral)"><b>${esc(it.label)}</b><div class="small">${esc(it.note)} No diving within 24 h of the Mon Nov 16 flight: last dive Sat Nov 14, Sun is a land day.</div></div>
+ <div class="week">${it.days.map((d,i)=>`<a href="#itinerary" onclick="document.getElementById('d-${i}').scrollIntoView({behavior:'smooth'});return false" style="border-top:4px solid ${DIVE[d.dive][1]}"><b>${esc(d.d)}</b><span>${esc(d.date.split(' ')[1])}</span></a>`).join('')}</div>
+ ${it.days.map((d,i)=>`<div class="card" id="d-${i}" style="border-left:5px solid ${DIVE[d.dive][1]}"><div class="meta">Day ${i+1} · ${esc(d.d)} ${esc(d.date)} · ${DIVE[d.dive][0]}</div><h3>${esc(d.title)}</h3><ul class="clean">${d.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${d.dinner?`<div style="font-size:14px">🍽️ <b>Dinner idea:</b> ${esc(d.dinner)}</div>`:''}</div>`).join('')}
+ ${foot()}</div>`}
+
 // ---------- boot ----------
 async function boot(){nav();
- const names=['trip','sites','diving','deals','info'];
+ const names=['trip','sites','diving','deals','info','rentals','itinerary'];
  const r=await Promise.all(names.map(n=>fetch(`data/${n}.json`,{cache:'no-cache'}).then(x=>x.json())));
  names.forEach((n,i)=>D[n]=r[i]);
- home();diving();food();deals();info();show();
+ home();itinerary();diving();food();deals();rentals();info();show();
  window.addEventListener('hashchange',show)}
 boot().catch(e=>{document.getElementById('v-home').classList.add('on');document.getElementById('v-home').innerHTML='<div class="card">Could not load trip data. Check your connection and reload.</div>';console.error(e)});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));

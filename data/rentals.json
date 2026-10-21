@@ -1,0 +1,83 @@
+{
+ "checked": "Oct 21, 2026",
+ "status": "Not booked",
+ "sections": [
+  {
+   "id": "cameras",
+   "h": "📷 Underwater cameras",
+   "items": [
+    {
+     "name": "BonPhoto Bonaire",
+     "price": "Lights/strobes from $20/day (pro kit prices not listed)",
+     "url": "https://bonphotobonaire.com/camera-rentals/",
+     "note": "Says it rents professional photo/video gear, runs photo courses and can send a cameraman with you. Best bet for pro footage if it's still operating.",
+     "flag": "Unverified: site was down Oct 21. Contact first."
+    },
+    {
+     "name": "Bonaire Photography Center",
+     "price": "Prices not listed",
+     "url": "http://www.bonairephotocenter.com/page/",
+     "note": "Photo coaching, guided photo dives, limited rental.",
+     "flag": "Unverified: page outdated and down Oct 21."
+    },
+    {
+     "name": "VIP Diving",
+     "price": "Olympus TG-5 $55/day (+$10 to keep the SD card)",
+     "url": "https://www.vipdiving.com/rental-gear",
+     "note": "Close to the Carib Inn. Compact camera, a modest step up from a GoPro. info@vipdiving.com · +599 701 7701"
+    },
+    {
+     "name": "Dive Friends Bonaire",
+     "price": "SeaLife Micro 3.0 $36/day · smartphone housing $41/day · 10% off 6+ days",
+     "url": "https://www.divefriendsbonaire.com/price-list",
+     "note": "Also PADI Digital Underwater Photographer course $197."
+    },
+    {
+     "name": "Buddy Dive",
+     "price": "No camera rental · PADI UW photo course $200",
+     "url": "https://www.buddydive.com/",
+     "note": "Course only."
+    },
+    {
+     "name": "Fallback: US rental house or videographer",
+     "price": "Varies",
+     "note": "For true pro footage (mirrorless/DSLR in a housing with lights), rent a kit from a US underwater-camera rental shop and fly it down, or hire a videographer for a dive or two."
+    }
+   ]
+  },
+  {
+   "id": "vehicles",
+   "h": "🛻 Vehicles",
+   "items": [
+    {
+     "name": "Carib Inn guest truck",
+     "price": "~$490/week (compact car $294/week, 1-week min)",
+     "url": "https://caribinn.com/rental-vehicles/",
+     "note": "Gas pickup recommended: shore diving means hauling tanks."
+    },
+    {
+     "name": "EV note",
+     "price": "Not recommended",
+     "note": "EV charging is scarce and the Carib Inn has none. Only a few Type 2 posts (Chogogo, Isidel area, Cicilia Motors)."
+    }
+   ]
+  },
+  {
+   "id": "gear",
+   "h": "🤿 Dive air & boat dives (Carib Inn)",
+   "items": [
+    {
+     "name": "Unlimited shore air",
+     "price": "$125 for 6 days",
+     "url": "https://caribinn.com/diving-packages/"
+    },
+    {
+     "name": "Boat dives",
+     "price": "$25 single · $275 for 6 · $425 for 12",
+     "url": "https://caribinn.com/diving-packages/",
+     "note": "Boats 8:30 AM and 1:30 PM daily."
+    }
+   ]
+  }
+ ]
+}

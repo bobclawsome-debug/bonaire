@@ -1,0 +1,112 @@
+{
+ "label": "Draft plan — tweak anytime",
+ "note": "Nothing is booked. Flights, dives and dinners are suggestions.",
+ "start": "2026-11-09",
+ "end": "2026-11-16",
+ "days": [
+  {
+   "d": "Mon",
+   "date": "Nov 9",
+   "title": "Travel day & arrive",
+   "dive": "none",
+   "items": [
+    "~5:00 AM CT leave St. Louis. Likely American via Miami (Monday departure; flights not booked)",
+    "Before: pay Entry Tax $75pp + STINAPA nature fee $40pp online",
+    "Check in at Carib Inn, pick up the truck",
+    "Groceries & water (Van den Tweel / Warehouse)",
+    "Easy evening: sunset on the waterfront"
+   ],
+   "dinner": "Something casual near Kralendijk",
+   "tag": "travel"
+  },
+  {
+   "d": "Tue",
+   "date": "Nov 10",
+   "title": "Orientation + easy reefs",
+   "dive": "shore",
+   "items": [
+    "Mandatory orientation/checkout dive + STINAPA briefing",
+    "Shore dives: Bari Reef, Buddy's Reef",
+    "Sunset at the hotel pier"
+   ],
+   "dinner": "Cactus Blue food truck",
+   "tag": null
+  },
+  {
+   "d": "Wed",
+   "date": "Nov 11",
+   "title": "North shore",
+   "dive": "shore",
+   "items": [
+    "Shore dives: 1000 Steps, Karpata",
+    "Washington Slagbaai National Park if time (nature fee covers entry)"
+   ],
+   "dinner": "Posada Para Mira",
+   "tag": null
+  },
+  {
+   "d": "Thu",
+   "date": "Nov 12",
+   "title": "Klein Bonaire",
+   "dive": "boat",
+   "items": [
+    "Carib Inn boat dives: No Name, Ebo's Reef",
+    "Or water taxi $25 round trip for snorkel/beach time"
+   ],
+   "dinner": "Joe's Restaurant",
+   "tag": null
+  },
+  {
+   "d": "Fri",
+   "date": "Nov 13",
+   "title": "Salt Pier & wreck",
+   "dive": "shore",
+   "items": [
+    "Shore dives: Salt Pier, Hilma Hooker",
+    "Afternoon: Lac Bay/Sorobon or Mangrove Center kayak ~$60",
+    "Guided night dive at Town Pier"
+   ],
+   "dinner": "Light/late dinner after night dive",
+   "tag": null
+  },
+  {
+   "d": "Sat",
+   "date": "Nov 14",
+   "title": "Double reefs + spa — LAST DIVE DAY",
+   "dive": "shore",
+   "items": [
+    "Shore dives: Andrea I/II, Alice in Wonderland / Angel City",
+    "Finish last dive by Sat afternoon/evening (≥24 h before flying; extra margin)",
+    "Spa: Massage Bonaire ~$90/hr or Smiling Buddha couples Thai massage"
+   ],
+   "dinner": "Restaurant Flora (Hotel Bougainvillea)",
+   "tag": "last"
+  },
+  {
+   "d": "Sun",
+   "date": "Nov 15",
+   "title": "No-dive land day",
+   "dive": "none",
+   "items": [
+    "Donkey Sanctuary",
+    "Rincon village",
+    "Flamingos (Pekelmeer / salt flats)",
+    "Souvenirs, return dive gear, pack"
+   ],
+   "dinner": "Farewell dinner: Restaurant Flora or Joe's",
+   "tag": "nodive"
+  },
+  {
+   "d": "Mon",
+   "date": "Nov 16",
+   "title": "Fly home",
+   "dive": "none",
+   "items": [
+    "Return truck, check out",
+    "Fly home, arrive ~10:05 PM CT"
+   ],
+   "dinner": null,
+   "tag": "travel"
+  }
+ ]
+}

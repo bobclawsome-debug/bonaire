@@ -8,6 +8,8 @@ Everything is data-driven. Edit the JSON and push:
 - `data/sites.json`: every map pin (dive sites, food + ratings, services, groceries, hotel)
 - `data/diving.json`: orientation, conditions, operators/prices, bring/rules/avoid
 - `data/deals.json`: deals, spas, activities, saving tips, unverified notes
+- `data/rentals.json`: Rentals tab (cameras, vehicles, dive air)
+- `data/itinerary.json`: Plan tab (day-by-day draft)
 - `data/info.json`: getting around, money, weather, flights, safety, emergency, events
 
 `map.html` loads `data/sites.json` at runtime. After changing pin categories/styles, run `python3 tools/build_map.py` (also regenerates `bonaire-dives.kml`).

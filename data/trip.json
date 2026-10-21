@@ -1,7 +1,7 @@
 {
  "title": "Our Bonaire Trip",
  "subtitle": "Diving, food & fun on Bonaire",
- "updated": "Oct 9, 2026",
+ "updated": "Oct 21, 2026",
  "hotel": {
   "name": "Bruce Bowker's Carib Inn",
   "addr": "J.A. Abraham Blvd 46, Kralendijk",
@@ -23,11 +23,12 @@
  "tbd": [
   {
    "k": "Trip dates",
-   "v": "TBD"
+   "v": "Mon Nov 9 – Mon Nov 16, 2026",
+   "known": true
   },
   {
    "k": "Flights",
-   "v": "TBD"
+   "v": "TBD (likely American via Miami)"
   },
   {
    "k": "Rental truck",
