@@ -19,7 +19,7 @@
    "photo": {
     "src": "img/activities/night-kayak.jpg",
     "alt": "Night kayak & bioluminescence, Lac Bay",
-    "credit": "Photo: Mike · CC BY-SA 2.0 · Wikimedia Commons",
+    "credit": "Photo: Mike · CC BY-SA 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Dinoflagellate_bioluminescence_3.jpg",
     "caption": "Photo shows bioluminescence generally, not Lac Bay."
    },
@@ -42,7 +42,7 @@
    "photo": {
     "src": "img/activities/mangrove-kayak.jpg",
     "alt": "Mangrove kayak & snorkel (day)",
-    "credit": "Photo: Adamboluu · CC BY-SA 4.0 · Wikimedia Commons",
+    "credit": "Photo: Adamboluu · CC BY-SA 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Mangrove_Center,_Bonaire.jpg",
     "caption": ""
    },
@@ -57,7 +57,7 @@
    "price": "US$99 per person",
    "price_src": "https://www.captainjackbonaire.com/boat-tours/bioluminescence-snorkel-tour-on-bonaire/",
    "duration": "~2 h",
-   "days": "Evenings; best around the new moon",
+   "days": "Evenings, about 7 PM departure. The glow show is strongest a few nights after the full moon, so ask the operator which nights to go.",
    "couple": "Unusual shared experience; small groups.",
    "physical": "Surface snorkel only, fine on diving days.",
    "book": "https://www.captainjackbonaire.com/boat-tours/bioluminescence-snorkel-tour-on-bonaire/",
@@ -65,7 +65,7 @@
    "photo": {
     "src": "img/activities/bio-snorkel.jpg",
     "alt": "Bioluminescence ('glow') night snorkel by boat",
-    "credit": "Photo: W.carter · CC0 · Wikimedia Commons",
+    "credit": "Photo: W.carter · CC0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Mareel_-_Bioluminescence_in_Norra_Grundsund_harbor_1.jpg",
     "caption": "Generic bioluminescence photo, not this tour."
    },
@@ -88,7 +88,7 @@
    "photo": {
     "src": "img/activities/sunset-sail.jpg",
     "alt": "Woodwind sunset snorkel sail",
-    "credit": "Photo: RCraig09 · CC BY 3.0 · Wikimedia Commons",
+    "credit": "Photo: RCraig09 · CC BY 3.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Bonaire_sunset.JPG",
     "caption": "Photo is a generic Bonaire sunset with a sailboat."
    },
@@ -111,7 +111,7 @@
    "photo": {
     "src": "img/activities/klein.jpg",
     "alt": "Klein Bonaire water taxi & beach day",
-    "credit": "Photo: dronepicr · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: dronepicr · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Klein_Bonaire_(34800854911).jpg",
     "caption": ""
    },
@@ -124,17 +124,17 @@
    "cat": "Wildlife & nature",
    "desc": "Guided walk in the green Dos Pos valley to see wild yellow-shouldered parrots (lora) and meet two ambassador parrots. Fees fund parrot conservation.",
    "price": "US$25 per adult",
-   "price_src": "http://www.echobonaire.org/visit/parrot-tours/",
+   "price_src": "https://www.echobonaire.org/visit/parrot-tours/",
    "duration": "1.5 h",
    "days": "Weekdays 9 AM; 48 h notice, minimum 2 people, cash only; book by WhatsApp (on their page)",
    "couple": "Perfect for two (meets the 2-person minimum).",
    "physical": "Easy walk on rough ground; sturdy shoes, water, bug spray.",
-   "book": "http://www.echobonaire.org/visit/parrot-tours/",
-   "site": "http://www.echobonaire.org/",
+   "book": "https://www.echobonaire.org/visit/parrot-tours/",
+   "site": "https://www.echobonaire.org/",
    "photo": {
     "src": "img/activities/echo.jpg",
     "alt": "Parrot nature tour at Echo (Dos Pos)",
-    "credit": "Photo: Atsme (Betty Wills) · CC BY-SA 4.0 · Wikimedia Commons",
+    "credit": "Photo: Atsme (Betty Wills) · CC BY-SA 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Lora_(cropped).jpg",
     "caption": ""
    },
@@ -157,7 +157,7 @@
    "photo": {
     "src": "img/activities/donkey.jpg",
     "alt": "Donkey Sanctuary",
-    "credit": "Photo: Serge Melki from Indianapolis, USA · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Serge Melki from Indianapolis, USA · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Wild_Donkeys_Bonaire_(339370349).jpg",
     "caption": "Photo shows wild Bonaire donkeys, not the sanctuary."
    },
@@ -180,7 +180,7 @@
    "photo": {
     "src": "img/activities/flamingo.jpg",
     "alt": "Flamingo viewing (Pekelmeer & Gotomeer)",
-    "credit": "Photo: Adamboluu · CC BY-SA 4.0 · Wikimedia Commons",
+    "credit": "Photo: Adamboluu · CC BY-SA 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Bonaire_Flamingos.jpg",
     "caption": ""
    },
@@ -203,7 +203,7 @@
    "photo": {
     "src": "img/activities/gotomeer.jpg",
     "alt": "Gotomeer lookout & 1000-step north drive",
-    "credit": "Photo: Paul Arps from The Netherlands · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Paul Arps from The Netherlands · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Goto_lake_(Bonaire_2014)_(15692457185).jpg",
     "caption": ""
    },
@@ -226,7 +226,7 @@
    "photo": {
     "src": "img/activities/south-loop.jpg",
     "alt": "South loop: slave huts, salt pier & pink salt pans",
-    "credit": "Photo: Paul Arps from The Netherlands · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Paul Arps from The Netherlands · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Slave_huts_(Bonaire_2014)_(15111091053).jpg",
     "caption": ""
    },
@@ -249,7 +249,7 @@
    "photo": {
     "src": "img/activities/seru-largu.jpg",
     "alt": "Seru Largu lookout",
-    "credit": "Photo: Bgabel · CC BY-SA 3.0 · Wikimedia Commons",
+    "credit": "Photo: Bgabel · CC BY-SA 3.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:BONAIRE-blick-seru-largu.jpg",
     "caption": ""
    },
@@ -272,7 +272,7 @@
    "photo": {
     "src": "img/activities/wsnp.jpg",
     "alt": "Washington Slagbaai National Park (self-drive)",
-    "credit": "Photo: Paul Asman and Jill Lenoble · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Paul Asman and Jill Lenoble · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Washington-Slagbaai_National_Park_(2446954669).jpg",
     "caption": ""
    },
@@ -295,7 +295,7 @@
    "photo": {
     "src": "img/activities/wsnp-guided.jpg",
     "alt": "Washington Park tour with local guide",
-    "credit": "Photo: Andrawaag · CC0 · Wikimedia Commons",
+    "credit": "Photo: Andrawaag · CC0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Rotsformatie_slagbaai_nationaal_park.jpg",
     "caption": ""
    },
@@ -318,7 +318,7 @@
    "photo": {
     "src": "img/activities/cadushy.jpg",
     "alt": "Cadushy Distillery tasting, Rincon",
-    "credit": "Photo: Bgabel · CC BY-SA 3.0 · Wikimedia Commons",
+    "credit": "Photo: Bgabel · CC BY-SA 3.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:BONAIRE-rincon-1.jpg",
     "caption": "Photo shows Rincon village, not the distillery."
    },
@@ -341,7 +341,7 @@
    "photo": {
     "src": "img/activities/food-tour.jpg",
     "alt": "Food & bar-hopping walking tour",
-    "credit": "Photo: Senor Luis Bertran · CC BY-SA 4.0 · Wikimedia Commons",
+    "credit": "Photo: Senor Luis Bertran · CC BY-SA 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Kaya_Craane,_Boulevard_Kralendijk,_Bonaire.jpg",
     "caption": ""
    },
@@ -364,7 +364,7 @@
    "photo": {
     "src": "img/activities/caves.jpg",
     "alt": "Cave tour (dry caves + snorkel cave)",
-    "credit": "Photo: JERRYE AND ROY KLOTZ MD · CC BY-SA 3.0 · Wikimedia Commons",
+    "credit": "Photo: JERRYE AND ROY KLOTZ MD · CC BY-SA 3.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:THE_DEVIL%27S_MOUTH,_BONAIRE.jpg",
     "caption": "Photo is a Bonaire coastal cave, not the tour caves."
    },
@@ -387,7 +387,7 @@
    "photo": {
     "src": "img/activities/landsail.jpg",
     "alt": "Land sailing (blokart)",
-    "credit": "Photo: Finn ped · CC BY-SA 4.0 · Wikimedia Commons",
+    "credit": "Photo: Finn ped · CC BY-SA 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Blokart_drag_race.jpg",
     "caption": ""
    },
@@ -410,7 +410,7 @@
    "photo": {
     "src": "img/activities/utv.jpg",
     "alt": "East coast UTV / ATV tour",
-    "credit": "Photo: Andrej Danković · CC BY 3.0 · Wikimedia Commons",
+    "credit": "Photo: Andrej Danković · CC BY 3.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Polaris_Sportsman_ATV_quad_bike.jpg",
     "caption": ""
    },
@@ -433,7 +433,7 @@
    "photo": {
     "src": "img/activities/horse.jpg",
     "alt": "Horseback riding (Flamingo or Beach ride)",
-    "credit": "Photo: James Emery from Douglasville, United States · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: James Emery from Douglasville, United States · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Netanya_Horseback_riding_on_the_beach_0524_(494325422).jpg",
     "caption": "Generic beach-ride photo, not Bonaire."
    },
@@ -456,7 +456,7 @@
    "photo": {
     "src": "img/activities/windsurf.jpg",
     "alt": "Windsurf lesson at Lac Bay",
-    "credit": "Photo: dronepicr · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: dronepicr · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Windsurfing_Bonaire_(36561612451).jpg",
     "caption": ""
    },
@@ -479,7 +479,7 @@
    "photo": {
     "src": "img/activities/kite.jpg",
     "alt": "Kitesurf lesson at Atlantis Beach",
-    "credit": "Photo: Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons",
+    "credit": "Photo: Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Vietnam,_Mui_Ne_beach,_Kitesurfing,_kiteboarding.jpg",
     "caption": "Generic kitesurf photo (Vietnam), not Bonaire."
    },
@@ -502,7 +502,7 @@
    "photo": {
     "src": "img/activities/mtb.jpg",
     "alt": "Guided mountain-bike tour",
-    "credit": "Photo: mypubliclands · Public domain · Wikimedia Commons",
+    "credit": "Photo: mypubliclands · Public domain · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Mountain_biking_at_Black_Canyon_in_Arizona_(34658205713).jpg",
     "caption": "Photo is a desert trail in Arizona, not Bonaire."
    },
@@ -525,7 +525,7 @@
    "photo": {
     "src": "img/activities/spa.jpg",
     "alt": "Thai yoga massage",
-    "credit": "Photo: Tara Angkor Hotel · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Tara Angkor Hotel · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Classical_Thai_Massage_at_Tara_Angkor_Hotel_(5918685202).jpg",
     "caption": "Generic Thai massage photo."
    },
@@ -548,7 +548,7 @@
    "photo": {
     "src": "img/activities/spa.jpg",
     "alt": "Beach & spa day pass",
-    "credit": "Photo: Tara Angkor Hotel · CC BY 2.0 · Wikimedia Commons",
+    "credit": "Photo: Tara Angkor Hotel · CC BY 2.0 · Wikimedia Commons · resized",
     "credit_url": "https://commons.wikimedia.org/wiki/File:Classical_Thai_Massage_at_Tara_Angkor_Hotel_(5918685202).jpg",
     "caption": "Generic massage photo, not Delfins."
    },
