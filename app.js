@@ -1,8 +1,8 @@
 'use strict';
-const TABS=[['home','🏝️','Home'],['map','🗺️','Map'],['itinerary','📅','Plan'],['diving','🤿','Diving'],['food','🍴','Food'],['deals','🎟️','Deals'],['rentals','📷','Rentals'],['info','ℹ️','Info']];
+const TABS=[['home','🏝️','Home'],['map','🗺️','Map'],['itinerary','📅','Plan'],['diving','🤿','Diving'],['food','🍴','Food'],['activities','🎯','Activities'],['deals','🎟️','Deals'],['rentals','📷','Rentals'],['info','ℹ️','Info']];
 const CATS={hotel:['Our hotel','#d50000'],shore:['Shore dive','#1e88e5'],advanced:['Advanced','#212121'],boat:['Boat only (Klein Bonaire)','#8e24aa'],restricted:['Restricted (permit/guided)','#fb8c00'],services:['Shops, stay, airport, hospital','#2e7d32'],food_cheap:['Cheap / local','#00897b'],food_mid:['Mid-range','#f9a825'],food_splurge:['Splurge','#5d4037'],groceries:['Groceries','#7cb342']};
 const VC={'Must try':'#2e7d32','Good':'#1565c0','OK':'#757575','Skip':'#e65100'};
-const D={};
+const D={};window.__D=D;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const dir=(lat,lon)=>`https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
@@ -129,10 +129,10 @@ function itinerary(){const it=D.itinerary;
 
 // ---------- boot ----------
 async function boot(){nav();
- const names=['trip','sites','diving','deals','info','rentals','itinerary'];
+ const names=['trip','sites','diving','deals','info','rentals','itinerary','activities'];
  const r=await Promise.all(names.map(n=>fetch(`data/${n}.json`,{cache:'no-cache'}).then(x=>x.json())));
  names.forEach((n,i)=>D[n]=r[i]);
- home();itinerary();diving();food();deals();rentals();info();show();
+ home();itinerary();diving();food();deals();rentals();info();activities();show();
  window.addEventListener('hashchange',show)}
 boot().catch(e=>{document.getElementById('v-home').classList.add('on');document.getElementById('v-home').innerHTML='<div class="card">Could not load trip data. Check your connection and reload.</div>';console.error(e)});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
