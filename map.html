@@ -53,13 +53,14 @@ const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZ
 const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
 osm.addTo(map);
 const groups={};Object.keys(CATS).forEach(k=>groups[k]=L.layerGroup().addTo(map));
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.protocol)?esc(x.href):''}catch(e){return ''}};
 const all=[];
 const VC={'Must try':'#2e7d32','Good':'#1565c0','OK':'#757575','Skip':'#e65100'};
 function stars(x){const r=Math.round(x*2)/2,f=Math.floor(r);return '★'.repeat(f)+(r-f?'½':'')+'<span style="color:#ddd">'+'★'.repeat(5-f-(r-f?1:0))+'</span>'}
 function rblock(r){let h=`<div class="rt"><span class="big">${stars(r.score)}</span><span class="num">${r.score.toFixed(1)}</span><span class="tot">${r.total.toLocaleString()} reviews</span>`;
- h+=r.sources.map(x=>`<div class="srcl">${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()})${x.rank?' · '+esc(x.rank):''} · <a href="${x.url}" target="_blank" rel="noopener">listing</a></div>`).join('');
- if(r.verdict)h+=`<span class="vb" style="background:${VC[r.verdict]}">${r.verdict}</span><span style="font-size:12px;color:#444">${esc(r.why)}</span>`;
+ h+=r.sources.map(x=>`<div class="srcl">${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()})${x.rank?' · '+esc(x.rank):''} ${safeUrl(x.url)?` · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener noreferrer">listing</a>`:''}</div>`).join('');
+ if(r.verdict)h+=`<span class="vb" style="background:${VC[r.verdict]}">${esc(r.verdict)}</span><span style="font-size:12px;color:#444">${esc(r.why)}</span>`;
  if(r.summary)h+=`<div class="sum">${esc(r.summary)}</div>`;
  if(r.flag)h+=`<div class="flag">⚠ ${esc(r.flag)}</div>`;
  return h+`<div class="fd">Combined = review-weighted average. Ratings fetched ${esc(r.fetched)}.</div></div>`}
@@ -77,7 +78,7 @@ SITES.forEach(s=>{
  if(s.depth)rows+=`<tr><td>Depth</td><td>${esc(s.depth)}</td></tr>`;
  const html=`<div class="pp"><h3>${esc(s.name)}</h3><span class="tag" style="background:${color}">${esc(label)}</span>${s.ratings?rblock(s.ratings):(food?'<div class="rt">No ratings found</div>':'')}
  ${rows?`<table>${rows}</table>`:''}<div>${esc(s.note)}</div>
- <a class="btn" href="${dir}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="btn" style="background:#555" href="${s.url}" target="_blank" rel="noopener">Website</a>`:''}
+ <a class="btn" href="${esc(dir)}" target="_blank" rel="noopener noreferrer">Directions</a>${safeUrl(s.url)?`<a class="btn" style="background:#555" href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">Website</a>`:''}
  <div class="src">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)} · Source: ${esc(s.src)}</div></div>`;
  const m=L.marker([s.lat,s.lon],{icon,title:s.name,zIndexOffset:s.cat==='hotel'?10000:0}).bindPopup(html,{maxWidth:300,maxHeight:Math.max(260,window.innerHeight-180),autoPanPaddingTopLeft:L.point(20,120),autoPanPaddingBottomRight:L.point(20,20)});
  m.bindTooltip(s.name.replace(/ \(Klein Bonaire\)/,''),{permanent:true,direction:'right',offset:[s.cat==='hotel'?22:10,0],className:s.cat==='hotel'?'lbl lblhotel':(s.cat==='services'||s.cat==='activity')?'lbl lblsvc':food?'lbl lblfood':'lbl'});
