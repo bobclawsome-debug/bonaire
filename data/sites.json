@@ -1125,5 +1125,89 @@
    "total": 162,
    "fetched": "Oct 9, 2026"
   }
+ },
+ {
+  "name": "Mangrove Center (night kayak)",
+  "cat": "activity",
+  "lat": 12.11632,
+  "lon": -68.22088,
+  "skill": "",
+  "depth": "",
+  "addr": "Kaminda Lac 140, Lac Bay",
+  "note": "Night kayak & bioluminescence, Wed & Thu 7-9 PM, US$75 pp. Best near the new moon.",
+  "src": "OSM node 3258954979 (Mangrove Info Center)",
+  "url": "https://www.mangrovecenter.com/night-kayak-tour"
+ },
+ {
+  "name": "Flamingo Diving (DPV course)",
+  "cat": "activity",
+  "lat": 12.11069,
+  "lon": -68.29269,
+  "skill": "",
+  "depth": "",
+  "addr": "EEG Boulevard 260, Belnem",
+  "note": "Underwater scooter course US$245 incl. eLearning, then DPV rental.",
+  "src": "Operator plus code 4P64+7W",
+  "url": "https://flamingodiving.com/rates/"
+ },
+ {
+  "name": "DivOcean Bonaire (DPV dives)",
+  "cat": "activity",
+  "lat": 12.1382,
+  "lon": -68.273,
+  "skill": "",
+  "depth": "",
+  "addr": "J.A. Abraham Blvd 82",
+  "note": "Guided underwater scooter dives, no course needed. Price not listed.",
+  "src": "Interpolated from OSM addresses Abraham Blvd 84 (way 727880267) and 60",
+  "url": "https://divoceanbonaire.com/duikexcursies/special-dpv-diving-2/"
+ },
+ {
+  "name": "Scuba Elite (DPV course)",
+  "cat": "activity",
+  "lat": 12.16079,
+  "lon": -68.27926,
+  "skill": "",
+  "depth": "",
+  "addr": "Kaya Antonio Neuman 7",
+  "note": "Private DPV course, US$371 per diver incl. eLearning.",
+  "src": "OSM way 1471838276",
+  "url": "https://scuba-elite.com/blog/dpv-diving-on-bonaire"
+ },
+ {
+  "name": "Great Adventures Bonaire (DPV rental)",
+  "cat": "activity",
+  "lat": 12.16371,
+  "lon": -68.28619,
+  "skill": "",
+  "depth": "",
+  "addr": "Harbour Village, Kaya Gob. N. Debrot 71",
+  "note": "DPV rental (per PADI). Price not listed.",
+  "src": "OSM way 378000928 (Harbour Village Beach Club); shop spot on property approximate",
+  "url": "https://www.padi.com/dive-center/caribbean-netherlands/great-adventures-bonaire/"
+ },
+ {
+  "name": "E-foil Bonaire (Corallium)",
+  "cat": "activity",
+  "lat": 12.13754,
+  "lon": -68.27042,
+  "skill": "",
+  "depth": "",
+  "addr": "Kaya International 2 (Corallium Hotel)",
+  "note": "eFoil lessons from US$150; guided ride US$140/45 min. Daily 9-6.",
+  "src": "OSM way 911872105 (Corallium Hotel & Villas)",
+  "url": "https://www.e-foilbonaire.com/"
+ },
+ {
+  "name": "Wave & Wheels Bonaire (eFoil)",
+  "cat": "activity",
+  "lat": 12.15217,
+  "lon": -68.27728,
+  "skill": "",
+  "depth": "",
+  "addr": "Kaya Korsow 1",
+  "note": "Fliteboard eFoil sessions and Seascooter rental. Prices not listed.",
+  "src": "OSM way 365567162 (Kaya Korsow, short street)",
+  "url": "https://waveandwheels.com/en/pages/bonaire"
  }
 ]
