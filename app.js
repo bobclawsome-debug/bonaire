@@ -122,10 +122,14 @@ function rentals(){const r=D.rentals;
 // ---------- Itinerary ----------
 const DIVE={shore:['🤿 Shore dives','#1e88e5'],boat:['🚤 Boat dives','#8e24aa'],none:['🚫 No diving','#757575']};
 function itinerary(){const it=D.itinerary;
- $('#v-itinerary').innerHTML=`<div class="wrap"><h1>📅 Itinerary</h1><div class="card" style="border-left:5px solid var(--coral)"><b>${esc(it.label)}</b><div class="small">${esc(it.note)} No diving within 24 h of the Mon Nov 16 flight: last dive Sat Nov 14, Sun is a land day.</div></div>
+ $('#v-itinerary').innerHTML=`<div class="wrap"><h1>📅 Itinerary</h1><div class="card" style="border-left:5px solid var(--coral)"><b>${esc(it.label)}</b><div class="small">${esc(it.note)}</div></div>
  <div class="week">${it.days.map((d,i)=>`<a href="#itinerary" onclick="document.getElementById('d-${i}').scrollIntoView({behavior:'smooth'});return false" style="border-top:4px solid ${DIVE[d.dive][1]}"><b>${esc(d.d)}</b><span>${esc(d.date.split(' ')[1])}</span></a>`).join('')}</div>
  ${it.days.map((d,i)=>`<div class="card" id="d-${i}" style="border-left:5px solid ${DIVE[d.dive][1]}"><div class="meta">Day ${i+1} · ${esc(d.d)} ${esc(d.date)} · ${DIVE[d.dive][0]}</div><h3>${esc(d.title)}</h3><ul class="clean">${d.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${d.dinner?`<div style="font-size:14px">🍽️ <b>Dinner idea:</b> ${esc(d.dinner)}</div>`:''}</div>`).join('')}
- ${foot()}</div>`}
+ ${foot()}</div>`;
+ const v=$('#v-itinerary'),hd=v.querySelector('.card');
+ if(it.legend&&hd){const lg=document.createElement('div');lg.className='small';lg.style.marginTop='6px';it.legend.forEach(([k,t])=>{const s=document.createElement('span');s.textContent=t;s.style.cssText='display:inline-block;margin:2px 6px 2px 0;padding:2px 8px;border-radius:10px;color:#fff;background:'+(k==='truck'?'#2e7d32':'#ef6c00');lg.appendChild(s)});hd.appendChild(lg)}
+ it.days.forEach((d,i)=>{if(typeof d.truck!=='boolean')return;const c=document.getElementById('d-'+i),m=c&&c.querySelector('.meta');if(!m)return;const s=document.createElement('span');s.textContent=d.truck?' · 🛻 Truck day':' · 🚶 No truck';s.style.color=d.truck?'#2e7d32':'#ef6c00';s.style.fontWeight='600';m.appendChild(s)});
+}
 
 // ---------- boot ----------
 async function boot(){nav();
