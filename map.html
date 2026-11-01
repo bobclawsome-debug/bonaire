@@ -45,7 +45,7 @@ html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Seg
 <div class="title">🤿 Bonaire Dive Map</div>
 <div id="map"></div>
 <script>
-const CATS={"hotel": ["Our hotel", "#d50000"], "shore": ["Shore dive", "#1e88e5"], "advanced": ["Advanced", "#212121"], "boat": ["Boat only (Klein Bonaire)", "#8e24aa"], "restricted": ["Restricted (permit/guided)", "#fb8c00"], "services": ["Shops, stay, airport, hospital", "#2e7d32"], "food_cheap": ["Food: cheap/local", "#00897b"], "food_mid": ["Food: mid-range", "#f9a825"], "food_splurge": ["Food: splurge", "#5d4037"], "groceries": ["Groceries", "#7cb342"]};
+const CATS={"hotel": ["Our hotel", "#d50000"], "shore": ["Shore dive", "#1e88e5"], "advanced": ["Advanced", "#212121"], "boat": ["Boat only (Klein Bonaire)", "#8e24aa"], "restricted": ["Restricted (permit/guided)", "#fb8c00"], "services": ["Shops, stay, airport, hospital", "#2e7d32"], "food_cheap": ["Food: cheap/local", "#00897b"], "food_mid": ["Food: mid-range", "#f9a825"], "food_splurge": ["Food: splurge", "#5d4037"], "groceries": ["Groceries", "#7cb342"], "activity": ["Activities", "#00acc1"]};
 if(window.self!==window.top)document.documentElement.classList.add('embed');
 fetch('data/sites.json',{cache:'no-cache'}).then(r=>r.json()).then(SITES=>{
 const map=L.map('map',{zoomControl:true}).setView([12.165,-68.30],11);
@@ -80,7 +80,7 @@ SITES.forEach(s=>{
  <a class="btn" href="${dir}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="btn" style="background:#555" href="${s.url}" target="_blank" rel="noopener">Website</a>`:''}
  <div class="src">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)} · Source: ${esc(s.src)}</div></div>`;
  const m=L.marker([s.lat,s.lon],{icon,title:s.name,zIndexOffset:s.cat==='hotel'?10000:0}).bindPopup(html,{maxWidth:300,maxHeight:Math.max(260,window.innerHeight-180),autoPanPaddingTopLeft:L.point(20,120),autoPanPaddingBottomRight:L.point(20,20)});
- m.bindTooltip(s.name.replace(/ \(Klein Bonaire\)/,''),{permanent:true,direction:'right',offset:[s.cat==='hotel'?22:10,0],className:s.cat==='hotel'?'lbl lblhotel':s.cat==='services'?'lbl lblsvc':food?'lbl lblfood':'lbl'});
+ m.bindTooltip(s.name.replace(/ \(Klein Bonaire\)/,''),{permanent:true,direction:'right',offset:[s.cat==='hotel'?22:10,0],className:s.cat==='hotel'?'lbl lblhotel':(s.cat==='services'||s.cat==='activity')?'lbl lblsvc':food?'lbl lblfood':'lbl'});
  m.addTo(groups[s.cat]);all.push(m);if(FOODCATS.includes(s.cat))foodM.push({m,s});
 });
 L.control.layers({'Street map':osm,'Satellite':sat},null,{position:'topright',collapsed:false}).addTo(map);
