@@ -1,112 +1,134 @@
 {
- "label": "Draft plan — tweak anytime",
- "note": "Nothing is booked. Flights, dives and dinners are suggestions.",
- "start": "2026-11-09",
- "end": "2026-11-16",
- "days": [
-  {
-   "d": "Mon",
-   "date": "Nov 9",
-   "title": "Travel day & arrive",
-   "dive": "none",
-   "items": [
-    "~5:00 AM CT leave St. Louis. Likely American via Miami (Monday departure; flights not booked)",
-    "Before: pay Entry Tax $75pp + STINAPA nature fee $40pp online",
-    "Check in at Carib Inn, pick up the truck",
-    "Groceries & water (Van den Tweel / Warehouse)",
-    "Easy evening: sunset on the waterfront"
-   ],
-   "dinner": "Something casual near Kralendijk",
-   "tag": "travel"
-  },
-  {
-   "d": "Tue",
-   "date": "Nov 10",
-   "title": "Orientation + easy reefs",
-   "dive": "shore",
-   "items": [
-    "Mandatory orientation/checkout dive + STINAPA briefing",
-    "Shore dives: Bari Reef, Buddy's Reef",
-    "Sunset at the hotel pier"
-   ],
-   "dinner": "Cactus Blue food truck",
-   "tag": null
-  },
-  {
-   "d": "Wed",
-   "date": "Nov 11",
-   "title": "North shore",
-   "dive": "shore",
-   "items": [
-    "Shore dives: 1000 Steps, Karpata",
-    "Washington Slagbaai National Park if time (nature fee covers entry)"
-   ],
-   "dinner": "Posada Para Mira",
-   "tag": null
-  },
-  {
-   "d": "Thu",
-   "date": "Nov 12",
-   "title": "Klein Bonaire",
-   "dive": "boat",
-   "items": [
-    "Carib Inn boat dives: No Name, Ebo's Reef",
-    "Or water taxi $25 round trip for snorkel/beach time"
-   ],
-   "dinner": "Joe's Restaurant",
-   "tag": null
-  },
-  {
-   "d": "Fri",
-   "date": "Nov 13",
-   "title": "Salt Pier & wreck",
-   "dive": "shore",
-   "items": [
-    "Shore dives: Salt Pier, Hilma Hooker",
-    "Afternoon: Lac Bay/Sorobon or Mangrove Center kayak ~$60",
-    "Guided night dive at Town Pier"
-   ],
-   "dinner": "Light/late dinner after night dive",
-   "tag": null
-  },
-  {
-   "d": "Sat",
-   "date": "Nov 14",
-   "title": "Double reefs + spa — LAST DIVE DAY",
-   "dive": "shore",
-   "items": [
-    "Shore dives: Andrea I/II, Alice in Wonderland / Angel City",
-    "Finish last dive by Sat afternoon/evening (≥24 h before flying; extra margin)",
-    "Spa: Massage Bonaire ~$90/hr or Smiling Buddha couples Thai massage"
-   ],
-   "dinner": "Restaurant Flora (Hotel Bougainvillea)",
-   "tag": "last"
-  },
-  {
-   "d": "Sun",
-   "date": "Nov 15",
-   "title": "No-dive land day",
-   "dive": "none",
-   "items": [
-    "Donkey Sanctuary",
-    "Rincon village",
-    "Flamingos (Pekelmeer / salt flats)",
-    "Souvenirs, return dive gear, pack"
-   ],
-   "dinner": "Farewell dinner: Restaurant Flora or Joe's",
-   "tag": "nodive"
-  },
-  {
-   "d": "Mon",
-   "date": "Nov 16",
-   "title": "Fly home",
-   "dive": "none",
-   "items": [
-    "Return truck, check out",
-    "Fly home, arrive ~10:05 PM CT"
-   ],
-   "dinner": null,
-   "tag": "travel"
-  }
- ]
+  "label": "Draft plan: truck days first, tweak anytime",
+  "note": "Nothing is booked except flights. Truck days (Nov 9-13): everything you need to drive to. No-truck days (Nov 14-16): boat dives, Klein Bonaire and walkable town. No diving within 24 h of the Mon Nov 16 flight: one early dive Sun Nov 15 at most, out of the water at least 24 h before takeoff. If the flight leaves before about 10 AM, make Sat Nov 14 the last dive day.",
+  "legend": [
+    [
+      "truck",
+      "🛻 Truck days (Nov 9-13)"
+    ],
+    [
+      "notruck",
+      "🚶 No truck (Nov 14-16)"
+    ]
+  ],
+  "start": "2026-11-09",
+  "end": "2026-11-16",
+  "days": [
+    {
+      "d": "Mon",
+      "date": "Nov 9",
+      "truck": true,
+      "title": "Travel day & arrive, pick up truck",
+      "dive": "none",
+      "items": [
+        "~5:00 AM CT leave St. Louis. Likely American via Miami (Monday departure; flights not booked)",
+        "Before: pay Entry Tax $75pp + STINAPA nature fee $40pp online",
+        "Check in at Carib Inn, pick up the truck",
+        "Truck run: big grocery & water stock-up (Van den Tweel / Warehouse) while you have wheels",
+        "Easy evening: sunset on the waterfront"
+      ],
+      "dinner": "Something casual near Kralendijk",
+      "tag": "travel"
+    },
+    {
+      "d": "Tue",
+      "date": "Nov 10",
+      "truck": true,
+      "title": "Orientation + central reefs",
+      "dive": "shore",
+      "items": [
+        "Mandatory orientation/checkout dive + STINAPA briefing",
+        "Shore dives (short drive north of town): Bari Reef, Buddy's Reef, Andrea I/II",
+        "Afternoon drive: Rincon village + Donkey Sanctuary"
+      ],
+      "dinner": "Cactus Blue food truck",
+      "tag": null
+    },
+    {
+      "d": "Wed",
+      "date": "Nov 11",
+      "truck": true,
+      "title": "North: Washington Slagbaai park + north sites",
+      "dive": "shore",
+      "items": [
+        "Early start: Washington Slagbaai National Park (nature fee covers entry; gate entry ends early afternoon)",
+        "Shore dives on the way back: 1000 Steps, Karpata, Oil Slick Leap",
+        "Option A for Lac Bay night kayak 7-9 PM (not booked yet; ~25 min drive). Thu is the lighter-day pick"
+      ],
+      "dinner": "Posada Para Mira (Rincon)",
+      "tag": null
+    },
+    {
+      "d": "Thu",
+      "date": "Nov 12",
+      "truck": true,
+      "title": "South loop + Lac Bay night kayak",
+      "dive": "shore",
+      "items": [
+        "Shore dives (south): Salt Pier, Hilma Hooker, Angel City / Alice in Wonderland",
+        "South loop drive: salt flats, slave huts, Pekelmeer flamingos, Willemstoren lighthouse",
+        "Lac Bay: Sorobon beach afternoon",
+        "Mangrove Center night kayak 7-9 PM, 2 adults (NOT BOOKED YET; Wed is the backup). Dark new-moon week = best glow"
+      ],
+      "dinner": "Hang Out Beachbar or Sebastian's at Lac Bay before the tour",
+      "tag": null
+    },
+    {
+      "d": "Fri",
+      "date": "Nov 13",
+      "truck": true,
+      "title": "Light day, return truck (time TBD)",
+      "dive": "shore",
+      "items": [
+        "Morning: 1-2 easy shore dives (e.g. Bari Reef / Town Pier area) or any site you missed",
+        "Truck errands before return: drop extra tanks, souvenir/heavy grocery run, fill up",
+        "Return truck: time TBD (check rental paperwork)",
+        "Evening: walk to dinner"
+      ],
+      "dinner": "Joe's Restaurant",
+      "tag": null
+    },
+    {
+      "d": "Sat",
+      "date": "Nov 14",
+      "truck": false,
+      "title": "Boat dives: Klein Bonaire",
+      "dive": "boat",
+      "items": [
+        "Carib Inn boat dives 8:30 AM / 1:30 PM: No Name, Ebo's Reef, The Forest",
+        "Or water taxi ~$25 round trip for Klein Bonaire snorkel/beach time",
+        "Sunset sail (optional)"
+      ],
+      "dinner": "Restaurant Flora (Hotel Bougainvillea)",
+      "tag": null
+    },
+    {
+      "d": "Sun",
+      "date": "Nov 15",
+      "truck": false,
+      "title": "Last dive morning + town & spa",
+      "dive": "boat",
+      "items": [
+        "LAST DIVE (optional): one early shore dive on the Carib Inn house reef, out of the water at least 24 h before Monday's flight",
+        "No diving within 24 h of the Mon Nov 16 flight. If the flight leaves before about 10 AM, skip this dive and make Saturday the last dive day",
+        "Spa: Massage Bonaire ~$90/hr or Smiling Buddha couples Thai massage",
+        "Walk the Kralendijk waterfront, souvenirs, return dive gear, pack"
+      ],
+      "dinner": "Farewell dinner: walkable in town (Bon Tapa, Capriccio or It Rains Fishes area)",
+      "tag": "last"
+    },
+    {
+      "d": "Mon",
+      "date": "Nov 16",
+      "truck": false,
+      "title": "Fly home",
+      "dive": "none",
+      "items": [
+        "Check out (taxi to the airport; truck already returned)",
+        "Fly home, arrive ~10:05 PM CT"
+      ],
+      "dinner": null,
+      "tag": "travel"
+    }
+  ]
 }
