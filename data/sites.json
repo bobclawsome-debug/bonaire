@@ -7,7 +7,59 @@
   "skill": "All levels",
   "depth": "20–100 ft",
   "note": "Easy water entry but a tough climb out of ~67 steps.",
-  "src": "OSM way 1495901720 (BNMP #16); matches bonaire.com 12.2108,-68.3216"
+  "src": "OSM way 1495901720 (BNMP #16); matches bonaire.com 12.2108,-68.3216",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.7,
+     "count": 1524,
+     "url": "https://wanderlog.com/place/details/166937/1000-steps-16",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.210815,-68.32161",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Zentacle",
+     "rating": 4.571428571428571,
+     "count": 28,
+     "url": "https://www.zentacle.com/Beach/98/1000-steps",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.697680412371134,
+   "total": 1552,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the reef top from about 15–30 ft (star coral under the mooring, hawksbill turtles). PADI lists the site at 20–100 ft. Scuba Diving magazine says the slope starts around 15 ft, and Bonaire.com puts the drop-off near 9 m / 30 ft. It keeps going well past 25 ft.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "20–100 ft; star coral and turtles"
+    },
+    {
+     "src": "Scuba Diving",
+     "url": "https://www.scubadiving.com/divers-guide-to-bonaire",
+     "note": "slope from about 15 ft to more than 130"
+    },
+    {
+     "src": "Bonaire.com",
+     "url": "https://bonaire.com/en/dive-sites/",
+     "note": "drop-off at 9 m"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/1000-steps.jpg",
+   "alt": "Diver at the top of the steps at the 1000 Steps dive site, Bonaire",
+   "caption": "Shore entry at the steps.",
+   "credit": "Janderk",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/File:Bonaire_1000_steps_(cropped).jpg",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Bonaire_1000_steps_(cropped).jpg"
+  }
  },
  {
   "name": "Salt Pier",
@@ -17,7 +69,59 @@
   "skill": "Beginner–intermediate",
   "depth": "13–60 ft",
   "note": "Closed when a salt ship is docked.",
-  "src": "OSM pier way 26326561; matches Diveity 12.0833,-68.2838 and bonaire.com 12.0828,-68.2836"
+  "src": "OSM pier way 26326561; matches Diveity 12.0833,-68.2838 and bonaire.com 12.0828,-68.2836",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.6,
+     "count": 961,
+     "url": "https://wanderlog.com/place/details/2603879/salt-pier-49",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.082964,-68.2818",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Zentacle",
+     "rating": 4.75,
+     "count": 32,
+     "url": "https://www.zentacle.com/Beach/1304/salt-pier",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.604833836858005,
+   "total": 993,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the encrusted pillars and the fish under them. An older shore guide lists the dive at 15–50 ft. PADI’s blog lists 40–70 ft. Beyond the Corals says turtles feed in the shallows on the swim back to shore. The pillar depths disagree, and PADI puts them deeper than 25 ft, so this is not badged.",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "15–50 ft; pillars encrusted with sponges and soft coral"
+    },
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "40–70 ft"
+    },
+    {
+     "src": "Beyond the Corals",
+     "url": "https://beyondthecorals.com/bonaire/dive-sites/",
+     "note": "pillars are the highlight; turtles feed in the shallows"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/salt-pier.jpg",
+   "alt": "Fish around the encrusted pylons under Salt Pier, Bonaire",
+   "caption": "Under the pier pylons.",
+   "credit": "amanderson2",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Salt_Pier_Pylons_and_Fish_(7157424457).jpg"
+  }
  },
  {
   "name": "Karpata",
@@ -27,7 +131,59 @@
   "skill": "Intermediate–advanced",
   "depth": "10–160 ft",
   "note": "Mornings only, skip in north wind; the wall is advanced.",
-  "src": "OSM node 663869440; matches bonaire.com 12.2195,-68.3521"
+  "src": "OSM node 663869440; matches bonaire.com 12.2195,-68.3521",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.6,
+     "count": 345,
+     "url": "https://wanderlog.com/place/details/886073/karpata-9",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.219454,-68.352116",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Zentacle",
+     "rating": 4.651162790697675,
+     "count": 43,
+     "url": "https://www.zentacle.com/Beach/444/karpata",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.605670103092783,
+   "total": 388,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: elkhorn coral from about 10 ft up to the surface, which you can see without dropping onto the wall. PADI lists the site at 20–100 ft (anchors in the coral). Bonaire.com puts the steep wall near 20 m / 65 ft. The badge is for the shallow elkhorn garden, not the wall.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "elkhorn from 10 ft to the surface; site 20–100 ft"
+    },
+    {
+     "src": "Bonaire.com",
+     "url": "https://bonaire.com/en/dive-sites/karpata-dive/",
+     "note": "shallow zone 3–8 m; wall from about 20 m"
+    },
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "20–100 ft"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/karpata.jpg",
+   "alt": "Shallow coral and butterflyfish at Karpata reef, Bonaire",
+   "caption": "Shallow reef at Karpata.",
+   "credit": "SNORKELINGDIVES.COM",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Snorkeling_Karpata_Reef,_Bonaire_(12841929245).jpg"
+  }
  },
  {
   "name": "Andrea I",
@@ -37,7 +193,38 @@
   "skill": "Easy / all levels",
   "depth": "Varies – ask shop",
   "note": "Easy site and a good night dive.",
-  "src": "OSM node 663869426; matches bonaire.com 12.1882,-68.2970"
+  "src": "OSM node 663869426; matches bonaire.com 12.1882,-68.2970",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.7,
+     "count": 342,
+     "url": "https://wanderlog.com/place/details/2603863/andrea-i-dive-site-23",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.188226,-68.296688",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.7,
+   "total": 342,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: from about 20 ft, where snorkelers and divers both see anemones, soft coral, seahorses and large parrotfish. PADI lists the slope at about 20–100 ft. The shore guide gives the same 20–100 ft range and does not name a deeper-only feature.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "about 20–100 ft; snorkelers see the parrotfish and seahorses"
+    },
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "average depth 20–100 ft"
+    }
+   ]
+  }
  },
  {
   "name": "Andrea II",
@@ -47,7 +234,38 @@
   "skill": "Easy / all levels",
   "depth": "Varies – ask shop",
   "note": "Easy site and a good night dive.",
-  "src": "OSM node 636400643; matches bonaire.com 12.1913,-68.2980"
+  "src": "OSM node 636400643; matches bonaire.com 12.1913,-68.2980",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.5,
+     "count": 192,
+     "url": "https://wanderlog.com/place/details/2603868/andrea-ii-dive-site-22",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.191445,-68.297732",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.5,
+   "total": 192,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: from about 20 ft, where snorkelers and divers both see anemones, soft coral, seahorses and large parrotfish. PADI lists the slope at about 20–100 ft. The shore guide gives the same 20–100 ft range and does not name a deeper-only feature.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "about 20–100 ft; snorkelers see the parrotfish and seahorses"
+    },
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "average depth 20–100 ft"
+    }
+   ]
+  }
  },
  {
   "name": "Oil Slick Leap",
@@ -57,7 +275,49 @@
   "skill": "Easy–intermediate",
   "depth": "10–80 ft",
   "note": "Ladder or giant-stride entry; barracuda and turtles; easy night site.",
-  "src": "OSM node 663869425; matches bonaire.com 12.2002,-68.3086"
+  "src": "OSM node 663869425; matches bonaire.com 12.2002,-68.3086",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.7,
+     "count": 198,
+     "url": "https://wanderlog.com/place/details/456696/oil-slick-leap-20",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.200148,-68.308621",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Zentacle",
+     "rating": 4.472222222222222,
+     "count": 36,
+     "url": "https://www.zentacle.com/Beach/638/oil-slick-leap",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.664957264957264,
+   "total": 234,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the shore guide lists 20–80 ft and large numbers of barracuda, without a separate shallow sweet spot. The published range starts at 20 ft, so the top of the site is within 25 ft. It does not say the barracuda stay that shallow.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "20–80 ft; barracuda"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/oil-slick.jpg",
+   "alt": "Ladder entry into the water at Oil Slick Leap, Bonaire",
+   "caption": "The ladder entry.",
+   "credit": "Chika Watanabe",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:OIl_Slick_Leap_(1888597967).jpg"
+  }
  },
  {
   "name": "Angel City",
@@ -67,7 +327,33 @@
   "skill": "Intermediate",
   "depth": "Varies – ask shop",
   "note": "Double reef; can run current.",
-  "src": "OSM node 663869415; matches bonaire.com 12.1034,-68.2872"
+  "src": "OSM node 663869415; matches bonaire.com 12.1034,-68.2872",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.6,
+     "count": 106,
+     "url": "https://wanderlog.com/place/details/1609994/angel-city-44",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.103454,-68.287291",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.6,
+   "total": 106,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the first reef, which starts at 4.5 m / 15 ft and slopes to about 15 m / 49 ft (gorgonians, star coral, angelfish, snappers). The second reef is about 18 m / 59 ft. Stay on the first reef if you want to remain near 25 ft.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "Beyond the Corals",
+     "url": "https://beyondthecorals.com/bonaire/dive-sites/",
+     "note": "first reef 4.5–15 m; second reef within 18 m"
+    }
+   ]
+  }
  },
  {
   "name": "Alice in Wonderland",
@@ -77,7 +363,38 @@
   "skill": "Intermediate",
   "depth": "Varies – ask shop",
   "note": "Double reef; can run current.",
-  "src": "OSM node 635881804; matches Diveity 12.0992,-68.2862 (bonaire.com point rejected: it duplicates Hilma Hooker)"
+  "src": "OSM node 635881804; matches Diveity 12.0992,-68.2862 (bonaire.com point rejected: it duplicates Hilma Hooker)",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.6,
+     "count": 98,
+     "url": "https://wanderlog.com/place/details/3923405/alice-in-wonderland-diving-site-45",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.099985,-68.285267",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.6,
+   "total": 98,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the first reef starts at 7 m / 23 ft and slopes to about 22 m (sponges, hard and soft coral, jacks). The sand channel between the reefs is about 24–30 m, and the second reef is advanced-only. PADI’s overview lists 30–100 ft, which matches that deeper half, not the top of the first reef.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "Beyond the Corals",
+     "url": "https://beyondthecorals.com/bonaire/dive-sites/",
+     "note": "first reef from 7 m to about 22 m; channel 24–30 m"
+    },
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "30–100 ft for the double-reef crossing"
+    }
+   ]
+  }
  },
  {
   "name": "Bari Reef",
@@ -87,7 +404,54 @@
   "skill": "Beginner",
   "depth": "Varies – ask shop",
   "note": "House reef with very high fish diversity.",
-  "src": "OSM node 313862678 (BNMP #30); matches bonaire.com 12.1672,-68.2871"
+  "src": "OSM node 313862678 (BNMP #30); matches bonaire.com 12.1672,-68.2871",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.3,
+     "count": 148,
+     "url": "https://wanderlog.com/place/details/16403/bari-reef-30",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.167178,-68.287113",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Tripadvisor via Wanderlog",
+     "rating": 4.5,
+     "count": 428,
+     "url": "https://wanderlog.com/place/details/16403/bari-reef-30",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.448611111111111,
+   "total": 576,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: PADI lists 30–100 ft for tarpon, seahorses and octopus, and calls it the Caribbean’s highest surveyed fish count. An older shore guide says 20–100 ft. Not badged: the current PADI range starts at 30 ft, deeper than 25.",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "30–100 ft"
+    },
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "20–100 ft"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/bari.jpg",
+   "alt": "Coral and reef fish while snorkeling Bari Reef, Bonaire",
+   "caption": "Snorkeling the reef.",
+   "credit": "SNORKELINGDIVES.COM",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Snorkeling_Bari_Reef,_Bonaire_(12841304654).jpg"
+  }
  },
  {
   "name": "Buddy's Reef",
@@ -97,7 +461,32 @@
   "skill": "Beginner",
   "depth": "Varies – ask shop",
   "note": "Buddy Dive house reef with high fish diversity.",
-  "src": "OSM node 635094204; matches bonaire.com 12.1708,-68.2885"
+  "src": "OSM node 635094204; matches bonaire.com 12.1708,-68.2885",
+  "viewing": {
+   "summary": "Best viewing depth is not clearly 25 ft or less. The shore guide lists 30–100 ft, with crinoids on coral heads in the shallows and a resident tarpon school at night. Bonaire.com puts the drop-off at 8 m / 26 ft. No counted star rating turned up for this reef (resort reviews are a different place).",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "30–100 ft"
+    },
+    {
+     "src": "Bonaire.com",
+     "url": "https://bonaire.com/en/dive-sites/",
+     "note": "drop-off at 8 m"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/buddys-reef.jpg",
+   "alt": "Parrotfish on the reef in front of Buddy Dive, Bonaire",
+   "caption": "Buddy Dive house reef.",
+   "credit": "SNORKELINGDIVES.COM",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Snorkeling_Buddy_Dive_Resort_Reef,_Bonaire_(12841445213).jpg"
+  }
  },
  {
   "name": "Hilma Hooker (wreck)",
@@ -107,7 +496,59 @@
   "skill": "Advanced",
   "depth": "60–110 ft",
   "note": "236-ft cargo wreck on sand between the Angel City reefs. Shore or boat (sources conflict), so confirm with your shop. Pin is the wreck; the shore marker is on the road just inland.",
-  "src": "OSM node 635881808; matches Diveity 12.1041,-68.2896 (bonaire.com 12.1051,-68.2885 = shore entry)"
+  "src": "OSM node 635881808; matches Diveity 12.1041,-68.2896 (bonaire.com 12.1051,-68.2885 = shore entry)",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Google Maps via Wanderlog",
+     "rating": 4.8,
+     "count": 175,
+     "url": "https://wanderlog.com/place/details/16407/hilma-hooker-43",
+     "maps": "https://www.google.com/maps/search/?api=1&query=12.10509,-68.288531",
+     "fetched": "Nov 11, 2026"
+    },
+    {
+     "src": "Tripadvisor via Wanderlog",
+     "rating": 4.5,
+     "count": 224,
+     "url": "https://wanderlog.com/place/details/16407/hilma-hooker-43",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.631578947368421,
+   "total": 399,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: the wreck itself, at 60–100 ft (PADI). Beyond the Corals says it lies on its starboard side and the dive reaches 30 m, for advanced divers. Shore divers cross a shallower reef with fish on the way out, but that is not the wreck.",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "PADI Travel blog",
+     "url": "https://blog.padi.com/7-must-dive-sites-of-bonaire/",
+     "note": "wreck at 60–100 ft; fish in the shallows on a shore approach"
+    },
+    {
+     "src": "Beyond the Corals",
+     "url": "https://beyondthecorals.com/bonaire/dive-sites/",
+     "note": "deep dive to 30 m; lies on her starboard side"
+    },
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "average 60–100 ft; advanced"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/hilma-hooker.jpg",
+   "alt": "Diver alongside the hull of the Hilma Hooker wreck, Bonaire",
+   "caption": "On the wreck.",
+   "credit": "amanderson2",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Hilma_Hooker_Wreck_Keith_Swimming_along_upturned_port_side_(7157410129).jpg"
+  }
  },
  {
   "name": "The Forest (Klein Bonaire)",
@@ -117,7 +558,18 @@
   "skill": "Advanced",
   "depth": "25–100 ft",
   "note": "Deep black-coral slope on Klein's southwest corner. Boat only.",
-  "src": "Diveity 12.1490,-68.3265; fits the SW corner of Klein on the OSM coastline (~70 m off). Approximate; bonaire.com point rejected (1 km offshore)"
+  "src": "Diveity 12.1490,-68.3265; fits the SW corner of Klein on the OSM coastline (~70 m off). Approximate; bonaire.com point rejected (1 km offshore)",
+  "viewing": {
+   "summary": "Best viewing: from 25 ft, where the shore guide says the soft coral and black coral that give the site its name are in the shallows, down to about 100 ft. The published range starts at 25 ft, so a 25 ft limit is the top of the site, not a garden above it. No counted star rating found.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "25–100 ft; soft coral and black coral in the shallows"
+    }
+   ]
+  }
  },
  {
   "name": "No Name (Klein Bonaire)",
@@ -127,7 +579,27 @@
   "skill": "Beginner–intermediate",
   "depth": "Varies – ask shop",
   "note": "Reef off No Name Beach on Klein's north shore. Boat or water taxi.",
-  "src": "bonaire.com 12.1687,-68.3052; sits just off No Name Beach (OSM beach way 317794966)"
+  "src": "bonaire.com 12.1687,-68.3052; sits just off No Name Beach (OSM beach way 317794966)",
+  "viewing": {
+   "summary": "Best viewing: 30–100 ft. The shore guide says coral is sparse and the sandy bottom holds rays and schoolmasters. That range starts deeper than 25 ft. No counted rating for this reef (Klein Bonaire the island is a different listing).",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "30–100 ft"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/no-name.jpg",
+   "alt": "White sand beach on Klein Bonaire seen from the water",
+   "caption": "The beach landing on Klein Bonaire. The reef is offshore of this beach.",
+   "credit": "Adamboluu",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Klein_Bonaire_as_seen_when_approaching_the_beach.jpg"
+  }
  },
  {
   "name": "Ebo's Reef (Klein Bonaire)",
@@ -137,7 +609,18 @@
   "skill": "Intermediate",
   "depth": "Varies – ask shop",
   "note": "Known for big elephant-ear sponges. Boat only.",
-  "src": "bonaire.com 12.1684,-68.3137 (single source; ~90 m off Klein's north coast on OSM)"
+  "src": "bonaire.com 12.1684,-68.3137 (single source; ~90 m off Klein's north coast on OSM)",
+  "viewing": {
+   "summary": "Best viewing: 40–100 ft, for the giant orange elephant-ear sponges this site is known for. A Bonaire.com summary says the reef starts shallow but gives no depth, so that line is not used. No counted star rating found.",
+   "shallow": false,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "40–100 ft; elephant-ear sponges"
+    }
+   ]
+  }
  },
  {
   "name": "Town Pier",
@@ -147,7 +630,46 @@
   "skill": "Guided only",
   "depth": "Shallow",
   "note": "Shallow pillars with frogfish and seahorses. Night dive only, guided, with an operator permit.",
-  "src": "bonaire.com 12.1492,-68.2773; at OSM Town Pier way 320348590"
+  "src": "bonaire.com 12.1492,-68.2773; at OSM Town Pier way 320348590",
+  "ratings": {
+   "sources": [
+    {
+     "src": "Zentacle",
+     "rating": 4.409090909090909,
+     "count": 22,
+     "url": "https://www.zentacle.com/Beach/1459/town-pier",
+     "fetched": "Nov 11, 2026"
+    }
+   ],
+   "score": 4.409090909090909,
+   "total": 22,
+   "fetched": "Nov 11, 2026"
+  },
+  "viewing": {
+   "summary": "Best viewing: on the pilings. The shore guide lists 20–40 ft. divers.world lists a typical range of 3–10 m / 10–33 ft (sponges, cup corals, macro life) and, as of Nov 11, 2026, says the pier is currently closed for diving. Permit and a guide; usually at night.",
+   "shallow": true,
+   "sources": [
+    {
+     "src": "Bonaire shore-dive guide (Dive with Ebby)",
+     "url": "https://www.divewithebby.net/boniare-dive-map",
+     "note": "20–40 ft"
+    },
+    {
+     "src": "divers.world",
+     "url": "https://www.divers.world/divesite/bonaire-national-marine-park/town-pier/",
+     "note": "typical range 3–10 m; listed closed for diving"
+    }
+   ]
+  },
+  "photo": {
+   "src": "img/dives/town-pier.jpg",
+   "alt": "Yellow sponge and orange cup corals at night on Town Pier, Bonaire",
+   "caption": "Night macro on the pier.",
+   "credit": "Clark Anderson",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+   "credit_url": "https://commons.wikimedia.org/wiki/File:Sponges_and_Cup_Corals_at_night_on_the_Town_Pier,_Bonaire,_Dutch_Antilles.jpg"
+  }
  },
  {
   "name": "VIP Diving",

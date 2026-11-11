@@ -5,7 +5,7 @@ Trip home base: https://bobclawsome-debug.github.io/bonaire/
 Everything is data-driven. Edit the JSON and push:
 
 - `data/trip.json`: header, hotel card, TBD items, before-you-go checklist
-- `data/sites.json`: every map pin (dive sites, food + ratings, services, groceries, hotel)
+- `data/sites.json`: every map pin (dive sites, food + ratings, services, groceries, hotel). Dive sites also have a sourced rating when one exists, a best-viewing depth, and a local photo when a freely licensed one of that site exists.
 - `data/diving.json`: orientation, conditions, operators/prices, bring/rules/avoid
 - `data/deals.json`: deals, spas, activities, saving tips, unverified notes
 - `data/rentals.json`: Rentals tab (cameras, vehicles, dive air)
