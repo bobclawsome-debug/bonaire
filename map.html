@@ -24,10 +24,10 @@ html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Seg
 .lbl{background:transparent;border:0;box-shadow:none;font-weight:600;font-size:11px;color:#111;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff}
 .rt{background:#fafafa;border:1px solid #eee;border-radius:6px;padding:6px 8px;margin:4px 0 6px}
 .rt .big{font-size:18px;color:#f5a623;letter-spacing:1px}.rt .num{font-size:18px;font-weight:700;color:#222;margin-left:4px}.rt .tot{color:#666;font-size:12px;margin-left:4px}
-.rt .srcl{font-size:12px;color:#444;margin-top:2px}.rt .srcl a{color:#1a73e8}
+.rt .srcl,.pp .srcl{font-size:12px;color:#444;margin-top:2px}.rt .srcl a,.pp .srcl a{color:#1a73e8}
 .vb{display:inline-block;color:#fff;border-radius:10px;padding:1px 8px;font-size:12px;font-weight:700;margin:4px 4px 2px 0}
-.rt .sum{font-size:13px;margin-top:4px}.rt .flag{font-size:12px;color:#8a4b00;background:#fff3e0;border-radius:4px;padding:3px 5px;margin-top:4px}
-.rt .fd{font-size:11px;color:#999;margin-top:3px}
+.rt .sum,.pp .sum{font-size:13px;margin-top:4px}.rt .flag{font-size:12px;color:#8a4b00;background:#fff3e0;border-radius:4px;padding:3px 5px;margin-top:4px}
+.rt .fd,.pp .fd{font-size:11px;color:#999;margin-top:3px}
 .fpanel{background:rgba(255,255,255,.97);border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);font-size:13px;max-width:290px}
 .fpanel .fbtns{display:flex;gap:6px;padding:6px}
 .fpanel button{border:0;border-radius:6px;padding:6px 9px;font-weight:700;font-size:13px;cursor:pointer;background:#eee}
@@ -58,13 +58,18 @@ const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.proto
 const all=[];
 const VC={'Must try':'#2e7d32','Good':'#1565c0','OK':'#757575','Skip':'#e65100'};
 function stars(x){const r=Math.round(x*2)/2,f=Math.floor(r);return '★'.repeat(f)+(r-f?'½':'')+'<span style="color:#ddd">'+'★'.repeat(5-f-(r-f?1:0))+'</span>'}
-function rblock(r){let h=`<div class="rt"><span class="big">${stars(r.score)}</span><span class="num">${r.score.toFixed(1)}</span><span class="tot">${r.total.toLocaleString()} reviews</span>`;
- h+=r.sources.map(x=>`<div class="srcl">${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()})${x.rank?' · '+esc(x.rank):''} ${safeUrl(x.url)?` · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener noreferrer">listing</a>`:''}</div>`).join('');
+function rblock(r){const dec=r.verdict?1:2;let h=`<div class="rt"><span class="big">${stars(r.score)}</span><span class="num">${r.score.toFixed(dec)}</span><span class="tot">${r.total.toLocaleString()} reviews</span>`;
+ h+=r.sources.map(x=>`<div class="srcl">${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()})${x.rank?' · '+esc(x.rank):''} ${safeUrl(x.url)?` · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener noreferrer">listing</a>`:''}${safeUrl(x.maps)?` · <a href="${safeUrl(x.maps)}" target="_blank" rel="noopener noreferrer">map</a>`:''}</div>`).join('');
  if(r.verdict)h+=`<span class="vb" style="background:${VC[r.verdict]}">${esc(r.verdict)}</span><span style="font-size:12px;color:#444">${esc(r.why)}</span>`;
  if(r.summary)h+=`<div class="sum">${esc(r.summary)}</div>`;
  if(r.flag)h+=`<div class="flag">⚠ ${esc(r.flag)}</div>`;
- return h+`<div class="fd">Combined = review-weighted average. Ratings fetched ${esc(r.fetched)}.</div></div>`}
+ return h+`<div class="fd">${r.sources.length>1?'Combined = review-weighted average. ':''}Ratings fetched ${esc(r.fetched)}.</div></div>`}
 const FOODCATS=['food_cheap','food_mid','food_splurge'];const foodM=[];
+const DIVE_CATS=['shore','advanced','boat','restricted'];
+const diveAll=SITES.filter(s=>DIVE_CATS.includes(s.cat));
+const diveRated=diveAll.filter(s=>s.ratings&&typeof s.ratings.score==='number').sort((a,b)=>{const ra=Number(a.ratings.score.toFixed(2)),rb=Number(b.ratings.score.toFixed(2));return rb-ra||(b.ratings.total||0)-(a.ratings.total||0)||a.name.localeCompare(b.name)});
+const diveUn=diveAll.filter(s=>!(s.ratings&&typeof s.ratings.score==='number')).sort((a,b)=>a.name.localeCompare(b.name));
+const diveOrder=diveRated.concat(diveUn), diveRank={};diveOrder.forEach((s,i)=>diveRank[s.name]=i+1);
 
 SITES.forEach(s=>{
  const [label,color]=CATS[s.cat];
@@ -76,8 +81,11 @@ SITES.forEach(s=>{
  if(s.addr)rows+=`<tr><td>Address</td><td>${esc(s.addr)}</td></tr>`;
  if(s.skill)rows+=`<tr><td>Skill</td><td>${esc(s.skill)}</td></tr>`;
  if(s.depth)rows+=`<tr><td>Depth</td><td>${esc(s.depth)}</td></tr>`;
- const html=`<div class="pp"><h3>${esc(s.name)}</h3><span class="tag" style="background:${color}">${esc(label)}</span>${s.ratings?rblock(s.ratings):(food?'<div class="rt">No ratings found</div>':'')}
- ${rows?`<table>${rows}</table>`:''}<div>${esc(s.note)}</div>
+ const dive=DIVE_CATS.includes(s.cat);
+ const v=s.viewing;
+ const diveHtml=dive?`<div class="fd">Rank ${diveRank[s.name]} of ${diveOrder.length}</div>${v?`<div class="sum">${v.shallow?'<span class="vb" style="background:#2e7d32">Great at 25 ft or less</span> ':''}${esc(v.summary)}</div>${(v.sources||[]).map(x=>`<div class="srcl">${esc(x.src)}${x.note?': '+esc(x.note):''} ${safeUrl(x.url)?`· <a href="${safeUrl(x.url)}" target="_blank" rel="noopener noreferrer">source</a>`:''}</div>`).join('')}`:''}`:'';
+ const html=`<div class="pp"><h3>${esc(s.name)}</h3><span class="tag" style="background:${color}">${esc(label)}</span>${s.ratings?rblock(s.ratings):(dive?'<div class="rt">Unrated. No counted rating found.</div>':(food?'<div class="rt">No ratings found</div>':''))}
+ ${diveHtml}${rows?`<table>${rows}</table>`:''}<div>${esc(s.note)}</div>
  <a class="btn" href="${esc(dir)}" target="_blank" rel="noopener noreferrer">Directions</a>${safeUrl(s.url)?`<a class="btn" style="background:#555" href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">Website</a>`:''}
  <div class="src">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)} · Source: ${esc(s.src)}</div></div>`;
  const m=L.marker([s.lat,s.lon],{icon,title:s.name,zIndexOffset:s.cat==='hotel'?10000:0}).bindPopup(html,{maxWidth:300,maxHeight:Math.max(260,window.innerHeight-180),autoPanPaddingTopLeft:L.point(20,120),autoPanPaddingBottomRight:L.point(20,20)});

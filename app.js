@@ -46,15 +46,46 @@ function home(){const t=D.trip,h=t.hotel;const st=JSON.parse(localStorage.getIte
 const foot=()=>`<div class="foot">Last updated ${esc(D.trip.updated)} · Ratings and prices change, so check before booking.<br>Map data © OpenStreetMap contributors</div>`;
 
 // ---------- Diving ----------
-let diveF='all';
-function diving(){const dv=D.diving,S=D.sites.filter(s=>['shore','advanced','boat','restricted'].includes(s.cat));
- const list=S.filter(s=>diveF==='all'||s.cat===diveF);
+const DIVE_CATS=['shore','advanced','boat','restricted'];
+let diveF='all',diveShallow=false;
+function diveShown(s){return Number(s.ratings.score.toFixed(2))}
+function diveOrder(){
+ const S=D.sites.filter(s=>DIVE_CATS.includes(s.cat));
+ const rated=S.filter(s=>s.ratings&&typeof s.ratings.score==='number');
+ const un=S.filter(s=>!(s.ratings&&typeof s.ratings.score==='number'));
+ rated.sort((a,b)=>diveShown(b)-diveShown(a)||(b.ratings.total||0)-(a.ratings.total||0)||a.name.localeCompare(b.name));
+ un.sort((a,b)=>a.name.localeCompare(b.name));
+ const order=rated.concat(un), rank={};
+ order.forEach((s,i)=>rank[s.name]=i+1);
+ return {order, rank, n:order.length};
+}
+function divePhoto(s){const p=s.photo;if(!p||!/^img\/dives\/[a-z0-9-]+\.jpg$/.test(p.src))return '';
+ const lic=p.license_url?link(p.license_url,p.license||'license'):esc(p.license||'');
+ const file=p.credit_url?link(p.credit_url,'file'):'';
+ return `<figure class="dive-fig"><img src="${esc(p.src)}" alt="${esc(p.alt||s.name)}" width="1200" height="800" loading="lazy" decoding="async"><figcaption class="small">${p.caption?esc(p.caption)+' ':''}Photo: ${esc(p.credit||'')} · ${lic}${file?' · '+file:''} · resized</figcaption></figure>`;
+}
+function diving(){const dv=D.diving,{order,rank,n}=diveOrder();
+ const list=order.filter(s=>(diveF==='all'||s.cat===diveF)&&(!diveShallow||(s.viewing&&s.viewing.shallow)));
+ const shallowN=order.filter(s=>s.viewing&&s.viewing.shallow).length;
  $('#v-diving').innerHTML=`<div class="wrap"><h1>🤿 Diving</h1>
  <div class="card" style="border-left:5px solid var(--coral)"><h3>⚠️ Day 1: mandatory orientation dive</h3>${esc(dv.orientation)} ${link(dv.orientation_src,'source')}</div>
- <h2>Dive sites (${S.length})</h2>
- <div class="chips">${[['all','All']].concat(['shore','advanced','boat','restricted'].map(k=>[k,CATS[k][0]])).map(([k,l])=>`<button class="chip${diveF===k?' on':''}" data-df="${k}">${k!=='all'?`<span class="dot" style="background:${CATS[k][1]}"></span>`:''}${esc(l)}</button>`).join('')}</div>
- <div class="grid">${list.map(s=>`<div class="card"><h3><span class="dot" style="background:${CATS[s.cat][1]}"></span>${esc(s.name)}</h3><div class="meta">${esc(CATS[s.cat][0])}${s.depth?' · Depth '+esc(s.depth):''}${s.skill?' · '+esc(s.skill):''}</div><div style="font-size:14px;margin-top:4px">${esc(s.note)}</div>
-  <button class="btn sm" onclick="showOnMap(${esc(JSON.stringify(s.name))})">Show on map</button><a class="btn sm alt" href="${dir(s.lat,s.lon)}" target="_blank" rel="noopener">Directions</a></div>`).join('')}</div>
+ <h2>Dive sites, best to worst</h2>
+ <div class="meta">Sorted by the rating rounded to two decimals, then by number of reviews. A green badge means a cited guide puts a main highlight at 25 ft or shallower. Deeper features are still noted. Not a medical clearance. Ratings checked ${esc((order.find(s=>s.ratings)||{ratings:{}}).ratings.fetched||'')}.</div>
+ <div class="chips">${[['all','All']].concat(DIVE_CATS.map(k=>[k,CATS[k][0]])).map(([k,l])=>`<button class="chip${diveF===k?' on':''}" data-df="${k}">${k!=='all'?`<span class="dot" style="background:${CATS[k][1]}"></span>`:''}${esc(l)}</button>`).join('')}
+ <button class="chip${diveShallow?' on':''}" id="shallowOnly" type="button" aria-pressed="${diveShallow}">Great at 25 ft or less (${shallowN})</button></div>
+ <div class="count">Showing ${list.length} of ${n}</div>
+ ${list.map(s=>{const r=s.ratings,v=s.viewing||{};return `<div class="card rank dive-card"><div class="num">${rank[s.name]}</div><div style="flex:1;min-width:0">
+  ${divePhoto(s)}
+  <h3><span class="dot" style="background:${CATS[s.cat][1]}"></span>${esc(s.name)}${v.shallow?' <span class="shallow">Great at 25 ft or less</span>':''}</h3>
+  <div class="meta">${esc(CATS[s.cat][0])}${s.depth?' · '+esc(s.depth):''}${s.skill?' · '+esc(s.skill):''}</div>
+  ${r?`<div><span class="stars">${stars(r.score)}</span><span class="score">${diveShown(s).toFixed(2)}</span> <span class="meta">${r.total.toLocaleString()} reviews</span></div>
+  <div class="small">${r.sources.map(x=>`${esc(x.src)}: ${x.rating.toFixed(1)} (${x.count.toLocaleString()}) ${link(x.url,'source')}${x.maps?' · '+link(x.maps,'map'):''}`).join('<br>')}</div>`
+   :'<div class="unrated">Unrated</div><div class="small">No counted rating found. Nothing was invented.</div>'}
+  <div class="viewline">${esc(v.summary||'Best viewing depth: not found in the guides checked.')}</div>
+  ${v.sources?`<div class="small">${v.sources.map(x=>`${esc(x.src)}${x.note?': '+esc(x.note):''} ${link(x.url,'source')}`).join('<br>')}</div>`:''}
+  <div style="font-size:14px;margin-top:4px">${esc(s.note)}</div>
+  <button class="btn sm" onclick="showOnMap(${esc(JSON.stringify(s.name))})">Show on map</button><a class="btn sm alt" href="${dir(s.lat,s.lon)}" target="_blank" rel="noopener">Directions</a>
+ </div></div>`}).join('')||'<div class="card">No sites match these filters.</div>'}
  <div class="card small">${esc(dv.week)}</div>
  <h2>🌡️ Conditions Oct–Dec</h2><div class="card"><div class="kv">${dv.conditions.map(c=>`<b>${esc(c.k)}</b><span>${esc(c.v)}</span>`).join('')}</div>${srcs(dv.conditions_src)}</div>
  <h2>🏪 Operators & prices</h2><div class="grid">${dv.operators.map(o=>`<div class="card"><h3>${esc(o.name)}</h3>${gtxt(o.g)}<ul class="clean">${o.prices.map(p=>`<li class="price">${esc(p)}</li>`).join('')}</ul><div style="font-size:14px">${esc(o.note)}</div>${srcs([o.url])}</div>`).join('')}</div>
@@ -62,7 +93,8 @@ function diving(){const dv=D.diving,S=D.sites.filter(s=>['shore','advanced','boa
  <h2>📜 Marine park rules</h2><div class="card"><ul class="clean">${dv.rules.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${srcs(dv.rules_src)}</div>
  <h2>🚫 Things to avoid</h2><div class="card"><ul class="clean">${dv.avoid.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${srcs(dv.avoid_src)}</div>
  ${foot()}</div>`;
- document.querySelectorAll('[data-df]').forEach(b=>b.onclick=()=>{diveF=b.dataset.df;const y=$('#v-diving').scrollTop;diving();$('#v-diving').scrollTop=y})}
+ document.querySelectorAll('[data-df]').forEach(b=>b.onclick=()=>{diveF=b.dataset.df;const y=$('#v-diving').scrollTop;diving();$('#v-diving').scrollTop=y});
+ const sh=$('#shallowOnly');if(sh)sh.onclick=()=>{diveShallow=!diveShallow;const y=$('#v-diving').scrollTop;diving();$('#v-diving').scrollTop=y}}
 
 // ---------- Food ----------
 const FF={min:0,unrated:true,v:{'Must try':1,'Good':1,'OK':1,'Skip':1},t:{food_cheap:1,food_mid:1,food_splurge:1}};
